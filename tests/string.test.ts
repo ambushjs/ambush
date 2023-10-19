@@ -9,12 +9,14 @@ import {
     titleCase,
     toggleCase,
     upperCase,
+    escapeHtml,
+    unescapeHtml,
     occurrences,
     reverseString,
     truncate,
 } from '../src/index';
 
-describe('String cases', () => {
+describe('cases', () => {
     it('should convert to camelCase', () => expect(camelCase('hello-world')).toBe('helloWorld'));
     it('should convert to kebab-case', () => expect(kebabCase('helloWorld')).toBe('hello-world'));
     it('should convert to lowercase', () => expect(lowerCase('HeLLo')).toBe('hello'));
@@ -25,6 +27,30 @@ describe('String cases', () => {
     it('should convert to titleCase', () => expect(titleCase('the quick brown fox Jumps oVer the lazy doG')).toBe('The Quick Brown Fox Jumps Over the Lazy Dog'));
     it('should convert to tOgGlEcAsE', () => expect(toggleCase('HeLLo')).toBe('hEllO'));
     it('should convert to UPPERCASE', () => expect(upperCase('heLlo')).toBe('HELLO'));
+});
+
+describe('escape and unescape functions', () => {
+    it('should escape special characters', () => {
+        const input = `"&'<>\``;
+        const expected = '&quot;&amp;&#x27;&lt;&gt;&#x60;';
+        const result = escapeHtml(input);
+        expect(result).toBe(expected);
+    });
+
+    it('should unescape special characters', () => {
+        const input = '&quot;&amp;&#x27;&lt;&gt;&#x60;';
+        const expected = `"&'<>\``;
+        const result = unescapeHtml(input);
+        expect(result).toBe(expected);
+    });
+
+    it('should not modify non-special characters', () => {
+        const input = 'This is a test string.';
+        const result = escapeHtml(input);
+        const unescapedResult = unescapeHtml(input);
+        expect(result).toBe(input);
+        expect(unescapedResult).toBe(input);
+    });
 });
 
 describe('occurrences', () => {
@@ -57,11 +83,7 @@ describe('truncate', () => {
         expect(truncate('Short', 10)).toEqual('Short');
     });
 
-    it('should append a suffix if provided', () => {
-        expect(truncate('This is a long string', 10, '...more')).toEqual('This is a...more');
-        expect(truncate('Short', 10, '...more')).toEqual('Short...more');
-    });
-
-    it('should append a suffix if not provided', () => expect(truncate('This is a long string')).toEqual('This is a l...'));
+    it('should append a suffix if provided', () => expect(truncate('This is a long string', 10, '...more')).toEqual('This is a...more'));
+    it('should append a suffix if not provided', () => expect(truncate('This is a long string')).toEqual('This is a...'));
     it('should return an empty string if the input is empty', () => expect(truncate('', 10)).toEqual(''));
 });

@@ -14,6 +14,7 @@ export * from './functions/array/shuffle';
 export * from './functions/object/merge';
 
 export * from './functions/string/cases';
+export * from './functions/string/html';
 export * from './functions/string/occurences';
 export * from './functions/string/reverseString';
 export * from './functions/string/truncate';

@@ -11,6 +11,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
         "no-extra-parens": "error",
         "no-unexpected-multiline": "error",
         "accessor-pairs": [
@@ -161,10 +162,6 @@
             "error",
             4
         ],
-        "jsx-quotes": [
-            "warn",
-            "prefer-double"
-        ],
         "linebreak-style": [
             "warn",
             "unix"
@@ -207,8 +204,12 @@
             "never"
         ],
         "quotes": [
-            "warn",
-            "single"
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
         ],
         "semi": [
             "error",

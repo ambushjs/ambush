@@ -5,10 +5,10 @@ function isObject<T>(item: T) {
 }
 
 export function merge<T>(target = {}, ...sources: T[]): AnyObject {
-    let updated = isObject(target) ? target : {};
+    const updated = isObject(target) ? target : {};
 
     if (!sources.length) return updated;
     else if (isObject(updated) && sources.every(isObject)) return Object.assign({}, updated, ...sources);
-    
+
     return merge(target, ...sources);
 }

@@ -26,8 +26,8 @@ export function sentenceCase(input: string) {
 
     if (!sentences) return input;
 
-    const sentenceCaseSentences = sentences.map((sentence) => {
-        sentence = sentence.trim();
+    const sentenceCaseSentences = sentences.map((output) => {
+        const sentence = output.trim();
 
         return sentence.length > 0 ?
             sentence.charAt(0).toUpperCase() + sentence.substring(1).toLowerCase() :
