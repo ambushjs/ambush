@@ -4,13 +4,13 @@
   "description": "A minimal library to streamline your code.",
   "license": "Apache-2.0",
   "author": "Zeptar <thezeptar@gmail.com>",
-  "homepage": "https://github.com/ambush/ambush#readme",
+  "homepage": "https://github.com/ambushjs/ambush#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ambush/ambush.git"
+    "url": "git+https://github.com/ambushjs/ambush.git"
   },
   "bugs": {
-    "url": "https://github.com/ambush/ambush/issues"
+    "url": "https://github.com/ambushjs/ambush/issues"
   },
   "main": "./dist/index.js",
   "files": [
