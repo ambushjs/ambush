@@ -1,0 +1,44 @@
+{
+  "name": "ambush",
+  "version": "1.0.0",
+  "description": "A minimal library to streamline your code.",
+  "license": "Apache-2.0",
+  "author": "Zeptar <thezeptar@gmail.com>",
+  "homepage": "https://github.com/ambush/ambush#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambush/ambush.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ambush/ambush/issues"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "directories": {
+    "lib": "./dist",
+    "test": "./test"
+  },
+  "scripts": {
+    "fix": "eslint . --fix",
+    "lint": "eslint .",
+    "start": "esrun src/index.ts",
+    "build": "[ -d 'dist' ] && rm -r dist || true && tsc",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "typings": "./dist/index.d.ts",
+  "devDependencies": {
+    "@digitak/esrun": "^3.2.25",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "library",
+    "nodejs",
+    "tools",
+    "utilities"
+  ]
+}
