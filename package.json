@@ -25,14 +25,16 @@
     "lint": "eslint .",
     "start": "esrun src/index.ts",
     "build": "[ -d 'dist' ] && rm -r dist || true && tsc",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "jest"
   },
   "typings": "./dist/index.d.ts",
   "devDependencies": {
     "@digitak/esrun": "^3.2.25",
+    "@types/jest": "^29.5.6",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.51.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   },
   "keywords": [
