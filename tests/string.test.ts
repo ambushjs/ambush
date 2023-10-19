@@ -12,6 +12,7 @@ import {
     escapeHtml,
     unescapeHtml,
     occurrences,
+    palindrome,
     reverseString,
     truncate,
 } from '../src/index';
@@ -67,6 +68,13 @@ describe('occurrences', () => {
 
     it('should handle non-matching substrings', () => expect(occurrences('hello world', 'z')).toEqual(0));
     it('should handle overlapping occurrences', () => expect(occurrences('aaaaaaa', 'aaa')).toEqual(2));
+});
+
+describe('palindrome', () => {
+    it('should return true for a palindrome string', () => expect(palindrome('A man a plan a canal Panama')).toBe(true));
+    it('should return false for a non-palindrome string', () => expect(palindrome('not a palindrome')).toBe(false));
+    it('should return true for an empty string', () => expect(palindrome('')).toBe(true));
+    it('should return true for a single character', () => expect(palindrome('a')).toBe(true));
 });
 
 describe('reverseString', () => {
