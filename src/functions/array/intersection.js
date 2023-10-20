@@ -1,24 +1,21 @@
-const deduplicate = require('./deduplicate');
-
 function convertToString(element) {
-    if (typeof element === 'string') return element;
-    return JSON.stringify(element);
+    return typeof element === 'string' ? element : JSON.stringify(element);
 }
 
 module.exports = function intersection(...arrays) {
     if (arrays.length === 0) return [];
 
     const denested = arrays.reduce((acc, current) => acc.concat(current), []);
-    const seen = {};
+    const seen = new Set();
     const elements = [];
 
     for (let i = 0; i < denested.length; i++) {
         const element = convertToString(denested[i]);
 
-        if (seen[element]) elements.push(denested[i]);
+        if (seen.has(element)) elements.push(denested[i]);
 
-        seen[element] = (seen[element] || 0) + 1;
+        seen.add(element);
     }
 
-    return deduplicate(elements);
+    return elements;
 };

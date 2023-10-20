@@ -1,16 +1,10 @@
-module.exports = function occurrences(input, substring) {
+function occurrences(input, substring) {
     if (!input || !substring) return 0;
 
-    let count = 0;
-    let startIndex = 0;
+    const pattern = new RegExp(substring, 'g');
+    const matches = input.match(pattern);
 
-    while (startIndex !== -1) {
-        startIndex = input.indexOf(substring, startIndex);
-        if (startIndex !== -1) {
-            count++;
-            startIndex += substring.length;
-        }
-    }
-
-    return count;
+    return matches ? matches.length : 0;
 };
+
+module.exports = occurrences;

@@ -21,7 +21,7 @@ export function upperCase(input: string): string;
 export function escapeHtml(input: string): string;
 export function unescapeHtml(input: string): string;
 
-export function occurences(input: string, substring: string): number;
+export function occurrences(input: string, substring: string): number;
 export function palindrome(input: string): boolean;
 export function reverseString(input: string): string;
 export function truncate(input: string, length?: number, ending?: string): string;
