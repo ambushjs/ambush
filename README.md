@@ -1,11 +1,11 @@
 <div align="center">
-    <a href="https://npmjs.com/package/ambush"><img src="https://svgshare.com/i/yg_.svg" width="500" alt="ambush" /></a>
-    <p>
-        <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/v/ambush" alt="NPM Version"></a>
-        <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/dt/ambush" alt="NPM Downloads"></a>
-        <a href="https://github.com/ambushjs/ambush/actions/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/ambushjs/ambush/tests.yml" alt="GitHub Build"></a>
-        <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/ambushjs/ambush" alt="GitHub License"></a>
-    </p>
+    <a href="https://npmjs.com/package/ambush">
+        <img src="https://svgshare.com/i/yg_.svg" width="500" alt="ambush" />
+    </a>
+    <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/v/ambush" alt="NPM Version"></a>
+    <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/dt/ambush" alt="NPM Downloads"></a>
+    <a href="https://github.com/ambushjs/ambush/actions/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/ambushjs/ambush/tests.yml" alt="GitHub Build"></a>
+    <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/ambushjs/ambush" alt="GitHub License"></a>
     <p>
         <a href="https://github.com/ambushjs/ambush"><img src="https://img.shields.io/badge/Made%20in-GitHub-2e2e2e.svg?style=for-the-badge&logo=github" alt="Made in GitHub"></a>
         <a href="https://github.com/ambushjs/ambush"><img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge" alt="Made with Love"></a>
@@ -39,15 +39,15 @@ import ab from 'ambush';
 
 ---
 
-# Contributing
+## Contributing
 
 See [the contributing guide][contributing] file for more details.
 
-## Code of Conduct
+### Code of Conduct
 
 We adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a respectful and inclusive community. Please review it and follow the guidelines when participating in this project.
 
-## License
+### License
 
 This project is licensed under the [Apache License 2.0][license].
 
