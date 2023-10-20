@@ -1,6 +1,6 @@
 {
   "name": "ambush",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal library to streamline your code.",
   "license": "Apache-2.0",
   "author": "Zeptar <thezeptar@gmail.com>",
