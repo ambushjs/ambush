@@ -28,5 +28,7 @@ If you ever find a vulnerability, you can either [create a Github issue](https:/
 Please make sure you are using the latest version of the package to benefit from security updates. You can check for updates using the following command:
 
 ```sh
-npm outdated cognifyr
+npm outdated ambush
+yarn outdated ambush
+pnpm outdated ambush
 ```

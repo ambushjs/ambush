@@ -5,6 +5,6 @@ function occurrences(input, substring) {
     const matches = input.match(pattern);
 
     return matches ? matches.length : 0;
-};
+}
 
 module.exports = occurrences;

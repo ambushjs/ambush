@@ -10,6 +10,6 @@
         { "type": "refactor", "hidden": true },
         { "type": "test", "hidden": true }
     ],
-    "commitUrlFormat": "https://github.com/cognifyr/cognifyr/commits/{{hash}}",
-    "compareUrlFormat": "https://github.com/cognifyr/cognifyr/compare/{{previousTag}}...{{currentTag}}"
+    "commitUrlFormat": "https://github.com/ambushjs/ambush/commits/{{hash}}",
+    "compareUrlFormat": "https://github.com/ambushjs/ambush/compare/{{previousTag}}...{{currentTag}}"
 }

@@ -1,5 +1,4 @@
 /node_modules/
-/dist/
-
 /TODO.md
 /package-lock.json
+/pnpm-lock.yaml
