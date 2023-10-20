@@ -1,7 +1,5 @@
 <div align="center">
-    <a href="https://npmjs.com/package/ambush">
-        <img src="https://svgshare.com/i/yg_.svg" width="500" alt="ambush" />
-    </a>
+    <a href="https://npmjs.com/package/ambush"><img src="https://svgshare.com/i/yg_.svg" width="500" alt="ambush" /></a>
     <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/v/ambush" alt="NPM Version"></a>
     <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/dt/ambush" alt="NPM Downloads"></a>
     <a href="https://github.com/ambushjs/ambush/actions/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/ambushjs/ambush/tests.yml" alt="GitHub Build"></a>
