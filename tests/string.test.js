@@ -1,4 +1,4 @@
-import {
+const {
     camelCase,
     kebabCase,
     lowerCase,
@@ -15,7 +15,7 @@ import {
     palindrome,
     reverseString,
     truncate,
-} from '../src/index';
+} = require('../src/index');
 
 describe('cases', () => {
     it('should convert to camelCase', () => expect(camelCase('hello-world')).toBe('helloWorld'));

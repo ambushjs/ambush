@@ -1,14 +1,12 @@
-type AnyObject = Record<string | number | symbol, any>;
-
-function isObject<T>(item: T) {
+function isObject(item) {
     return item && typeof item === 'object' && !Array.isArray(item);
 }
 
-export function merge<T>(target = {}, ...sources: T[]): AnyObject {
+module.exports = function merge(target, ...sources) {
     const updated = isObject(target) ? target : {};
 
     if (!sources.length) return updated;
     else if (isObject(updated) && sources.every(isObject)) return Object.assign({}, updated, ...sources);
 
     return merge(target, ...sources);
-}
+};

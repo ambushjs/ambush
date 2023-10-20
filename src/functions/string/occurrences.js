@@ -1,4 +1,4 @@
-export function occurrences(input: string, substring: string) {
+module.exports = function occurrences(input, substring) {
     if (!input || !substring) return 0;
 
     let count = 0;
@@ -13,4 +13,4 @@ export function occurrences(input: string, substring: string) {
     }
 
     return count;
-}
+};

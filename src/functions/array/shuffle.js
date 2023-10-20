@@ -1,4 +1,4 @@
-export function shuffle<T>(array: T[]) {
+module.exports = function shuffle(array) {
     const shuffledArray = [...array];
 
     for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -7,4 +7,4 @@ export function shuffle<T>(array: T[]) {
     }
 
     return shuffledArray;
-}
+};
