@@ -11,7 +11,8 @@ exports.deduplicate = require('./functions/array/deduplicate');
 exports.intersection = require('./functions/array/intersection');
 exports.shuffle = require('./functions/array/shuffle');
 
-exports.merge = require('./functions/object/merge');
+exports.difference = require('./functions/multi/difference');
+exports.merge = require('./functions/multi/merge');
 
 exports.camelCase = require('./functions/string/cases/camelCase');
 exports.kebabCase = require('./functions/string/cases/kebabCase');

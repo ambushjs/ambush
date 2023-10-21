@@ -1,11 +1,10 @@
-type AnyObject = Record<string | number | symbol, any>;
-
 export function chunk<T>(array: T[], size: number): T[][];
 export function deduplicate<T>(array: T[]): T[];
 export function intersection<T>(arrays: T[][]): T[];
 export function shuffle<T>(array: T[]): T[];
 
-export function merge<T>(target: AnyObject, ...sources: T[]): T;
+export function difference<T>(a: T, b: T): T;
+export function merge<T, P>(target: T, ...sources: P[]): P;
 
 export function camelCase(input: string): string;
 export function kebabCase(input: string): string;
