@@ -43,7 +43,7 @@ See [the contributing guide][contributing] file for more details.
 
 ### Code of Conduct
 
-We adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a respectful and inclusive community. Please review it and follow the guidelines when participating in this project.
+We adhere to the [Code of Conduct][conduct] to ensure a respectful and inclusive community. Please review it and follow the guidelines when participating in this project.
 
 ### License
 
@@ -57,4 +57,5 @@ This project is licensed under the [Apache License 2.0][license].
 [pnpm]: https://pnpm.io
 [website]: https://ambush.js.org
 [contributing]: https://github.com/ambushjs/ambush/tree/main/CONTRIBUTING.md
+[conduct]: https://github.com/ambushjs/ambush/tree/main/CODE_OF_CONDUCT.md
 [license]: https://apache.org/licenses/LICENSE-2.0
