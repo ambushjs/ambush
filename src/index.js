@@ -12,6 +12,7 @@ exports.intersection = require('./functions/array/intersection');
 exports.shuffle = require('./functions/array/shuffle');
 
 exports.difference = require('./functions/multi/difference');
+exports.flatten = require('./functions/multi/flatten');
 exports.merge = require('./functions/multi/merge');
 
 exports.camelCase = require('./functions/string/cases/camelCase');

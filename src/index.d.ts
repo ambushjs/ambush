@@ -4,6 +4,7 @@ export function intersection<T>(arrays: T[][]): T[];
 export function shuffle<T>(array: T[]): T[];
 
 export function difference<T>(a: T, b: T): T;
+export function flatten<T>(arg: T, joiner?: string): T;
 export function merge<T, P>(target: T, ...sources: P[]): P;
 
 export function camelCase(input: string): string;
