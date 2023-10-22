@@ -1,3 +1,5 @@
+const deduplicate = require('./deduplicate');
+
 function convertToString(element) {
     return typeof element === 'string' ? element : JSON.stringify(element);
 }
@@ -17,5 +19,5 @@ module.exports = function intersection(...arrays) {
         seen.add(element);
     }
 
-    return elements;
+    return deduplicate(elements);
 };

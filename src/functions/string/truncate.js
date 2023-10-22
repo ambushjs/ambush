@@ -1,4 +1,4 @@
 module.exports = function truncate(input, length, ending) {
-    const updatedLength = length ?? 10;
-    return input.length <= updatedLength ? input : `${input.slice(0, updatedLength).trimEnd()}${ending ?? '...'}`;
+    if (typeof input !== 'string') return input;
+    return input.length <= length ?? 10 ? input : `${input.substring(0, length ?? 10).trimEnd()}${ending ?? '...'}`;
 };

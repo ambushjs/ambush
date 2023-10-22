@@ -1,5 +1,5 @@
 function occurrences(input, substring) {
-    if (!input || !substring) return 0;
+    if (typeof input !== 'string' || typeof substring !== 'string') return 0;
 
     const pattern = new RegExp(substring, 'g');
     const matches = input.match(pattern);
