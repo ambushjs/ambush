@@ -1,7 +1,8 @@
-function hasOwn(arg, key) {
-    return Object.prototype.hasOwnProperty.call(arg, key);
+function hasOwn(data, key) {
+    return Object.prototype.hasOwnProperty.call(data, key);
 }
 
+/** Find the symmetric difference between an object, array or a string. */
 module.exports = function difference(a, b) {
     if (Array.isArray(a) && Array.isArray(b)) {
         const set1 = new Set(a);
@@ -48,5 +49,5 @@ module.exports = function difference(a, b) {
         return result;
     }
 
-    throw new TypeError('[ParamTypes] Unsupported data types');
+    return [];
 };

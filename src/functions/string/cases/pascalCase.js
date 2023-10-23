@@ -1,3 +1,4 @@
+/** Convert a string to PascalCase. */
 module.exports = function pascalCase(input) {
     return input
         .replace(/[-_]/g, ' ')

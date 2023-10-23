@@ -1,3 +1,4 @@
+/** Convert a string to snake_case. */
 module.exports = function snakeCase(input) {
     return input
         .replace(/[-\s]/g, '_')

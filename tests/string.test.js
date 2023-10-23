@@ -6,6 +6,7 @@ const {
     sentenceCase,
     snakeCase,
     startCase,
+    switchCase,
     titleCase,
     toggleCase,
     upperCase,
@@ -25,32 +26,21 @@ describe('cases', () => {
     it('should convert to Sentence case', () => expect(sentenceCase('THE quiCK bRown fox. jUMPS? over tHE! lAZy doG')).toBe('The quick brown fox. Jumps? Over the! Lazy dog'));
     it('should convert to snake_case', () => expect(snakeCase('helloWorld')).toBe('hello_world'));
     it('should convert to Start Case', () => expect(startCase('hello world')).toBe('Hello World'));
-    it('should convert to titleCase', () => expect(titleCase('the quick brown fox Jumps oVer the lazy doG')).toBe('The Quick Brown Fox Jumps Over the Lazy Dog'));
-    it('should convert to tOgGlEcAsE', () => expect(toggleCase('HeLLo')).toBe('hEllO'));
+    it('should convert to sWITCHcASE', () => expect(switchCase('HeLLo')).toBe('hEllO'));
+    it('should convert to Title Case', () => expect(titleCase('the quick brown fox Jumps oVer the lazy doG')).toBe('The Quick Brown Fox Jumps Over the Lazy Dog'));
+    it('should convert to tOgGlEcAsE', () => expect(toggleCase('Hello world!')).toBe('hElLo wOrLd!'));
     it('should convert to UPPERCASE', () => expect(upperCase('heLlo')).toBe('HELLO'));
 });
 
-describe('escape and unescape functions', () => {
-    it('should escape special characters', () => {
-        const input = `"&'<>\``;
-        const expected = '&quot;&amp;&#x27;&lt;&gt;&#x60;';
-        const result = escapeHtml(input);
-        expect(result).toBe(expected);
-    });
-
-    it('should unescape special characters', () => {
-        const input = '&quot;&amp;&#x27;&lt;&gt;&#x60;';
-        const expected = `"&'<>\``;
-        const result = unescapeHtml(input);
-        expect(result).toBe(expected);
-    });
+describe('escape and unescape', () => {
+    it('should escape special characters', () => expect(escapeHtml(`"&'<>\``)).toBe('&quot;&amp;&#x27;&lt;&gt;&#x60;'));
+    it('should unescape special characters', () => expect(unescapeHtml('&quot;&amp;&#x27;&lt;&gt;&#x60;')).toBe(`"&'<>\``));
 
     it('should not modify non-special characters', () => {
         const input = 'This is a test string.';
-        const result = escapeHtml(input);
-        const unescapedResult = unescapeHtml(input);
-        expect(result).toBe(input);
-        expect(unescapedResult).toBe(input);
+
+        expect(escapeHtml(input)).toBe(input);
+        expect(unescapeHtml(input)).toBe(input);
     });
 });
 

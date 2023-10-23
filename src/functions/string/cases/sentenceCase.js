@@ -1,3 +1,4 @@
+/** Convert a string to sentence case. */
 module.exports = function sentenceCase(input) {
     const sentences = input.match(/[^.!?]+[.!?]*/g);
 
