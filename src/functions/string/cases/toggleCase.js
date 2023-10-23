@@ -7,4 +7,4 @@ module.exports = function toggleCase(input) {
         currentCase = !currentCase;
         return !currentCase === true ? split.toLowerCase() : split.toUpperCase();
     }).join('');
-}
+};
