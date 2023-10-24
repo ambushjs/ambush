@@ -12,7 +12,7 @@
 
 # Overview
 
-###### Links: [Package][package] | [Github][github]
+###### Links: [Docs][website] | [Package][package]
 
 Ambush is a minimal library that streamlines and brings plenty of handy utility features to simplify your coding tasks. In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritizes performance and is tailored to enhance your development experience while keeping things lean and efficient.
 
@@ -22,7 +22,9 @@ Get started with Ambush by setting up the environment.
 
 You will need [Node.js][nodejs] 14.0.0 or newer before installing by your preferred package manager ([npm][npm], [yarn][yarn], or [pnpm][pnpm]).
 
-![Install Ambush](https://nodei.co/npm/ambush.png?mini=true)
+<a href="https://npmjs.com/package/ambush">
+    <img src="https://nodei.co/npm/ambush.png?mini=true" alt="npm install ambush" />
+</a>
 
 ## Importing
 
@@ -33,19 +35,17 @@ const ab = require('ambush');
 import ab from 'ambush';
 ```
 
-<!-- See the full documentation [here][website] -->
+Now, you can start using Ambush in your code! See all the available functions and the full documentation [here][website]
 
 ---
 
-## Contributing
+To contribute, please see [the contributing guide][contributing] file for more details.
 
-See [the contributing guide][contributing] file for more details.
-
-### Code of Conduct
+## Code of Conduct
 
 We adhere to the [Code of Conduct][conduct] to ensure a respectful and inclusive community. Please review it and follow the guidelines when participating in this project.
 
-### License
+## License
 
 This project is licensed under the [Apache License 2.0][license].
 
