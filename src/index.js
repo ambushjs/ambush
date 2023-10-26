@@ -6,7 +6,7 @@
  * @license Apache License 2.0
  */
 
-// Multi-type functions (mostly object and arrays)
+// Multi-type functions
 exports.chunk = require('./functions/multi/chunk');
 exports.deduplicate = require('./functions/multi/deduplicate');
 exports.difference = require('./functions/multi/difference');
@@ -15,7 +15,7 @@ exports.intersection = require('./functions/multi/intersection');
 exports.merge = require('./functions/multi/merge');
 exports.shuffle = require('./functions/multi/shuffle');
 
-// String cases
+// String manipulation
 exports.camelCase = require('./functions/string/cases/camelCase');
 exports.kebabCase = require('./functions/string/cases/kebabCase');
 exports.lowerCase = require('./functions/string/cases/lowerCase');
@@ -27,12 +27,8 @@ exports.switchCase = require('./functions/string/cases/switchCase');
 exports.titleCase = require('./functions/string/cases/titleCase');
 exports.toggleCase = require('./functions/string/cases/toggleCase');
 exports.upperCase = require('./functions/string/cases/upperCase');
-
-// String HTML
 exports.escapeHtml = require('./functions/string/html/escapeHtml');
 exports.unescapeHtml = require('./functions/string/html/unescapeHtml');
-
-// String manipulation
 exports.occurrences = require('./functions/string/occurrences');
 exports.palindrome = require('./functions/string/palindrome');
 exports.reverseString = require('./functions/string/reverseString');

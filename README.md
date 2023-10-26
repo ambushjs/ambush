@@ -41,8 +41,6 @@ Now, you can start using Ambush in your code! See all the available functions an
 
 To contribute, please see [the contributing guide][contributing] file for more details.
 
-## Code of Conduct
-
 We adhere to the [Code of Conduct][conduct] to ensure a respectful and inclusive community. Please review it and follow the guidelines when participating in this project.
 
 ## License

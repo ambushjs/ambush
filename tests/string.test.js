@@ -16,72 +16,48 @@ const {
     palindrome,
     reverseString,
     truncate,
-} = require('../src/index');
+} = require('../src');
 
-describe('cases', () => {
-    it('should convert to camelCase', () => expect(camelCase('hello-world')).toBe('helloWorld'));
-    it('should convert to kebab-case', () => expect(kebabCase('helloWorld')).toBe('hello-world'));
-    it('should convert to lowercase', () => expect(lowerCase('HeLLo')).toBe('hello'));
-    it('should convert to PascalCase', () => expect(pascalCase('hello-world')).toBe('HelloWorld'));
-    it('should convert to Sentence case', () => expect(sentenceCase('THE quiCK bRown fox. jUMPS? over tHE! lAZy doG')).toBe('The quick brown fox. Jumps? Over the! Lazy dog'));
-    it('should convert to snake_case', () => expect(snakeCase('helloWorld')).toBe('hello_world'));
-    it('should convert to Start Case', () => expect(startCase('hello world')).toBe('Hello World'));
-    it('should convert to sWITCHcASE', () => expect(switchCase('HeLLo')).toBe('hEllO'));
-    it('should convert to Title Case', () => expect(titleCase('the quick brown fox Jumps oVer the lazy doG')).toBe('The Quick Brown Fox Jumps Over the Lazy Dog'));
-    it('should convert to tOgGlEcAsE', () => expect(toggleCase('Hello world!')).toBe('hElLo wOrLd!'));
-    it('should convert to UPPERCASE', () => expect(upperCase('heLlo')).toBe('HELLO'));
-});
+const assert = require('assert');
 
-describe('escape and unescape', () => {
-    it('should escape special characters', () => expect(escapeHtml(`"&'<>\``)).toBe('&quot;&amp;&#x27;&lt;&gt;&#x60;'));
-    it('should unescape special characters', () => expect(unescapeHtml('&quot;&amp;&#x27;&lt;&gt;&#x60;')).toBe(`"&'<>\``));
+module.exports = function stringTests() {
+    assert.strictEqual(camelCase('hello-world'), 'helloWorld');
+    assert.strictEqual(kebabCase('helloWorld'), 'hello-world');
+    assert.strictEqual(lowerCase('HeLLo'), 'hello');
+    assert.strictEqual(pascalCase('hello-world'), 'HelloWorld');
+    assert.strictEqual(sentenceCase('THE quiCK bRown fox. jUMPS? over tHE! lAZy doG'), 'The quick brown fox. Jumps? Over the! Lazy dog');
+    assert.strictEqual(snakeCase('helloWorld'), 'hello_world');
+    assert.strictEqual(startCase('hello world'), 'Hello World');
+    assert.strictEqual(switchCase('HeLLo'), 'hEllO');
+    assert.strictEqual(titleCase('the quick brown fox Jumps oVer the lazy doG'), 'The Quick Brown Fox Jumps Over the Lazy Dog');
+    assert.strictEqual(toggleCase('Hello world!'), 'hElLo wOrLd!');
+    assert.strictEqual(upperCase('heLlo'), 'HELLO');
 
-    it('should not modify non-special characters', () => {
-        const input = 'This is a test string.';
+    assert.strictEqual(escapeHtml(`"&'<>\``), '&quot;&amp;&#x27;&lt;&gt;&#x60;');
+    assert.strictEqual(unescapeHtml('&quot;&amp;&#x27;&lt;&gt;&#x60;'), `"&'<>\``);
+    assert.strictEqual(escapeHtml('Test'), 'Test');
+    assert.strictEqual(unescapeHtml('Test'), 'Test');
 
-        expect(escapeHtml(input)).toBe(input);
-        expect(unescapeHtml(input)).toBe(input);
-    });
-});
+    assert.strictEqual(occurrences('hello world', 'o'), 2);
+    assert.strictEqual(occurrences('aaaaaa', 'aa'), 3);
+    assert.strictEqual(occurrences('', 'a'), 0);
+    assert.strictEqual(occurrences('hello world', ''), 0);
+    assert.strictEqual(occurrences('', ''), 0);
+    assert.strictEqual(occurrences('hello world', 'z'), 0);
+    assert.strictEqual(occurrences('aaaaaaa', 'aaa'), 2);
 
-describe('occurrences', () => {
-    it('should return the correct number of occurrences', () => {
-        expect(occurrences('hello world', 'o')).toEqual(2);
-        expect(occurrences('aaaaaa', 'aa')).toEqual(3);
-    });
+    assert.strictEqual(palindrome('A man a plan a canal Panama'), true);
+    assert.strictEqual(palindrome('not a palindrome'), false);
+    assert.strictEqual(palindrome(''), true);
+    assert.strictEqual(palindrome('a'), true);
 
-    it('should return 0 for empty input or substring', () => {
-        expect(occurrences('', 'a')).toEqual(0);
-        expect(occurrences('hello world', '')).toEqual(0);
-        expect(occurrences('', '')).toEqual(0);
-    });
+    assert.strictEqual(reverseString('hello'), 'olleh');
+    assert.strictEqual(reverseString('world'), 'dlrow');
+    assert.strictEqual(reverseString(''), '');
 
-    it('should handle non-matching substrings', () => expect(occurrences('hello world', 'z')).toEqual(0));
-    it('should handle overlapping occurrences', () => expect(occurrences('aaaaaaa', 'aaa')).toEqual(2));
-});
-
-describe('palindrome', () => {
-    it('should return true for a palindrome string', () => expect(palindrome('A man a plan a canal Panama')).toBe(true));
-    it('should return false for a non-palindrome string', () => expect(palindrome('not a palindrome')).toBe(false));
-    it('should return true for an empty string', () => expect(palindrome('')).toBe(true));
-    it('should return true for a single character', () => expect(palindrome('a')).toBe(true));
-});
-
-describe('reverseString', () => {
-    it('should reverse a string correctly', () => {
-        expect(reverseString('hello')).toEqual('olleh');
-        expect(reverseString('world')).toEqual('dlrow');
-        expect(reverseString('')).toEqual('');
-    });
-});
-
-describe('truncate', () => {
-    it('should truncate a string to the specified length', () => {
-        expect(truncate('This is a long string', 10)).toEqual('This is a...');
-        expect(truncate('Short', 10)).toEqual('Short');
-    });
-
-    it('should append a suffix if provided', () => expect(truncate('This is a long string', 10, '...more')).toEqual('This is a...more'));
-    it('should append a suffix if not provided', () => expect(truncate('This is a long string')).toEqual('This is a...'));
-    it('should return an empty string if the input is empty', () => expect(truncate('', 10)).toEqual(''));
-});
+    assert.strictEqual(truncate('This is a long string', 10), 'This is a...');
+    assert.strictEqual(truncate('Short', 10), 'Short');
+    assert.strictEqual(truncate('This is a long string', 10, '...more'), 'This is a...more');
+    assert.strictEqual(truncate('This is a long string'), 'This is a...');
+    assert.strictEqual(truncate('', 10), '');
+}

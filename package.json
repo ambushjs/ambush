@@ -24,12 +24,11 @@
     "fix": "eslint . --fix",
     "lint": "eslint .",
     "start": "node src",
-    "test": "node src && jest"
+    "test": "node src && node tests"
   },
   "typings": "./src/index.d.ts",
   "devDependencies": {
     "eslint": "^8.51.0",
-    "jest": "^29.7.0",
     "standard-version": "^9.5.0"
   },
   "keywords": [
