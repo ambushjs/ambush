@@ -1,4 +1,5 @@
 const {
+    altCase,
     camelCase,
     kebabCase,
     lowerCase,
@@ -8,19 +9,18 @@ const {
     startCase,
     switchCase,
     titleCase,
-    toggleCase,
     upperCase,
     escapeHtml,
     unescapeHtml,
     occurrences,
     palindrome,
-    reverseString,
     truncate,
 } = require('../src');
 
 const assert = require('assert');
 
 module.exports = function stringTests() {
+    assert.strictEqual(altCase('Hello world!'), 'hElLo wOrLd!');
     assert.strictEqual(camelCase('hello-world'), 'helloWorld');
     assert.strictEqual(kebabCase('helloWorld'), 'hello-world');
     assert.strictEqual(lowerCase('HeLLo'), 'hello');
@@ -30,7 +30,6 @@ module.exports = function stringTests() {
     assert.strictEqual(startCase('hello world'), 'Hello World');
     assert.strictEqual(switchCase('HeLLo'), 'hEllO');
     assert.strictEqual(titleCase('the quick brown fox Jumps oVer the lazy doG'), 'The Quick Brown Fox Jumps Over the Lazy Dog');
-    assert.strictEqual(toggleCase('Hello world!'), 'hElLo wOrLd!');
     assert.strictEqual(upperCase('heLlo'), 'HELLO');
 
     assert.strictEqual(escapeHtml(`"&'<>\``), '&quot;&amp;&#x27;&lt;&gt;&#x60;');
@@ -50,10 +49,6 @@ module.exports = function stringTests() {
     assert.strictEqual(palindrome('not a palindrome'), false);
     assert.strictEqual(palindrome(''), true);
     assert.strictEqual(palindrome('a'), true);
-
-    assert.strictEqual(reverseString('hello'), 'olleh');
-    assert.strictEqual(reverseString('world'), 'dlrow');
-    assert.strictEqual(reverseString(''), '');
 
     assert.strictEqual(truncate('This is a long string', 10), 'This is a...');
     assert.strictEqual(truncate('Short', 10), 'Short');
