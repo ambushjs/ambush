@@ -1,4 +1,3 @@
-/** Switch cases in a string. */
 module.exports = function switchCase(input) {
     return input
         .split('')

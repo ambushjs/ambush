@@ -1,5 +1,4 @@
-/** Convert a string to tOgGlEcAsE */
-module.exports = function toggleCase(input) {
+module.exports = function altCase(input) {
     let currentCase = true;
     const splitted = input.split('');
 

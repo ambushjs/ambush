@@ -1,4 +1,3 @@
-/** Unnest a nested object or an array into a single-level structure */
 module.exports = function flatten(data, joiner = '.') {
     const result = Array.isArray(data) ? [] : {};
 

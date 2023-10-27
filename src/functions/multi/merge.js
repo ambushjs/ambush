@@ -2,7 +2,6 @@ function isType(item) {
     return typeof item === 'object' || typeof item === 'string';
 }
 
-/** Deep merge an object, array or a string together. */
 module.exports = function merge(target, ...sources) {
     if (!isType(target)) return target;
 

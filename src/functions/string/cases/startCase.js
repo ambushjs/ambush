@@ -1,4 +1,3 @@
-/** Convert a string to Start Case. */
 module.exports = function startCase(input) {
     return input
         .toLowerCase()

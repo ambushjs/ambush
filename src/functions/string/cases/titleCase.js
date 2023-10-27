@@ -1,4 +1,3 @@
-/** Convert a string to Title Case. */
 module.exports = function titleCase(input) {
     const lowercaseWords = ['the', 'and', 'a', 'an', 'in', 'of', 'on', 'for', 'to', 'with'];
     const words = input.toLowerCase().split(' ');

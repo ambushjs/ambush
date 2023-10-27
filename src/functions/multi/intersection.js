@@ -2,7 +2,6 @@ function hasOwn(arg, key) {
     return Object.prototype.hasOwnProperty.call(arg, key);
 }
 
-/** Find duplicate elements in a object, string or an array. */
 module.exports = function intersection(...items) {
     if (items.length === 0) return items[0];
 

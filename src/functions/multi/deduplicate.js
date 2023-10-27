@@ -1,4 +1,3 @@
-/** Remove duplicated elements in an object or an array. */
 module.exports = function deduplicate(data) {
     if (typeof data !== 'object') return data;
     if (Array.isArray(data)) return Array.from(new Set(data));

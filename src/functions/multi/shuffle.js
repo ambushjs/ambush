@@ -9,7 +9,6 @@ function shuffleArray(arr) {
     return shuffled;
 }
 
-/** Randomly shuffle an object, array or a string. */
 module.exports = function shuffle(data) {
     if (Array.isArray(data)) return shuffleArray(data);
     else if (typeof data === 'string') return shuffleArray(data.split('')).join('');

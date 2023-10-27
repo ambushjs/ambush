@@ -1,4 +1,3 @@
-/** Chunk an object or an array. */
 module.exports = function chunk(data, size) {
     if (Array.isArray(data)) {
         const chunkedArray = [];
