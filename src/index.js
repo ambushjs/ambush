@@ -25,6 +25,8 @@ exports.flatten = require('./functions/multi/flatten');
 exports.intersection = require('./functions/multi/intersection');
 /** Deeply merge an object, array or a string together. */
 exports.merge = require('./functions/multi/merge');
+/** Reverse an array, object or a string. */
+exports.reverse = require('./functions/multi/reverse');
 /** Randomly shuffle an object, array or a string. */
 exports.shuffle = require('./functions/multi/shuffle');
 
@@ -58,7 +60,5 @@ exports.unescapeHtml = require('./functions/string/html/unescapeHtml');
 exports.occurrences = require('./functions/string/occurrences');
 /** Check if a string is palindrome */
 exports.palindrome = require('./functions/string/palindrome');
-/** Reverse a string */
-exports.reverseString = require('./functions/string/reverseString');
 /** Truncate a string */
 exports.truncate = require('./functions/string/truncate');
