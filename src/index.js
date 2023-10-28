@@ -6,10 +6,10 @@
  * @license Apache License 2.0
  */
 
-/** Print an input to the console with custom colors. */
-exports.printColor = require('./functions/color/print');
 /** An object with ANSI escape codes */
 exports.colors = require('./functions/color/ansiCodes');
+/** Print an input to the console with custom colors. */
+exports.printColor = require('./functions/color/print');
 
 /** Chunk an object or an array. */
 exports.chunk = require('./functions/multi/chunk');
