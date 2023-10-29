@@ -6,10 +6,10 @@
  * @license Apache License 2.0
  */
 
-/** An object with ANSI escape codes */
-exports.colors = require('./functions/color/ansiCodes');
+/** An object with ANSI escape codes. */
+exports.colors = require('./colors/ansiCodes');
 /** Print an input to the console with custom colors. */
-exports.printColor = require('./functions/color/print');
+exports.printColor = require('./colors/print');
 
 /** Chunk an object or an array. */
 exports.chunk = require('./functions/multi/chunk');
@@ -27,6 +27,7 @@ exports.merge = require('./functions/multi/merge');
 exports.reverse = require('./functions/multi/reverse');
 /** Randomly shuffle an object, array or a string. */
 exports.shuffle = require('./functions/multi/shuffle');
+exports.sort = require('./functions/multi/sort');
 
 /** Convert a string to aLtErNaTiNgCaSe. */
 exports.altCase = require('./functions/string/cases/altCase');

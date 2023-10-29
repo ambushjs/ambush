@@ -1,7 +1,7 @@
-import ansiCodes from './functions/color/ansiCodes';
+import ansiCodes from './colors/ansiCodes';
 
 type Data = string | number | symbol;
-type ColorTypes = typeof ansiCodes;
+type ColorTypes = keyof typeof ansiCodes;
 
 export function printColor<T>(type: ColorTypes, ...args: T[]): void;
 
@@ -13,6 +13,7 @@ export function intersection<T>(...datas: T[]): T;
 export function merge<T, P>(target: T, ...datas: P[]): T & P;
 export function reverse<T>(data: T): T;
 export function shuffle<T>(data: T): T;
+export function sort<T>(data: T, caseSensitive?: boolean): T;
 
 export function alphaCase(input: string): string;
 export function camelCase(input: string): string;

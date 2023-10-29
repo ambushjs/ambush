@@ -1,5 +1,5 @@
 module.exports = function reverse(data) {
-    if (typeof data === 'string') return Array.from(data).reverse().join('');
+    if (typeof data === 'string') return data.split('').reverse().join('');
     else if (Array.isArray(data)) return data.reverse();
     else if (typeof data === 'object') {
         const keys = Object.keys(data).reverse();
