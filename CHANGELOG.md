@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.1](https://github.com/ambushjs/ambush/compare/v1.2.0...v1.2.1) (2023-10-30)
+
+
+### Features
+
+* ⚠️ **security:** Prototype-polluting function ([e34605a](https://github.com/ambushjs/ambush/commits/e34605a698d0e7726180b4f10662dda72c9cf78b))
+
+
+### Bug Fixes
+
+* ⚠️ **security:** Initialize vulnerability fix ([916839c](https://github.com/ambushjs/ambush/commits/916839c86344fd289cf2ee2c9c0db418b85a348b))
+* ⚠️ **security:** Verify fix ([59ab031](https://github.com/ambushjs/ambush/commits/59ab031d78d2ece32aecded63b6e8f383989c8b5))
+
 ## [1.2.0](https://github.com/ambushjs/ambush/compare/v1.1.0...v1.2.0) (2023-10-30)
 
 

@@ -14,7 +14,7 @@ module.exports = function merge(target, ...datas) {
             for (const data of datas) {
                 for (const key in data) {
                     if (!hasOwn(data, key)) continue;
-                    if (key === "__proto__" || key === "constructor") continue;
+                    if (key === '__proto__' || key === 'constructor') continue;
 
                     if (hasOwn(target, key) && isType(data[key])) {
                         if (!isType(target[key])) target[key] = {};
