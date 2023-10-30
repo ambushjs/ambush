@@ -17,7 +17,7 @@ exports.chunk = require('./functions/multi/chunk');
 exports.deduplicate = require('./functions/multi/deduplicate');
 /** Find the symmetric difference between an object, array or a string. */
 exports.difference = require('./functions/multi/difference');
-/** Unnest a nested object or an array into a single-level structure */
+/** Unnest a nested object or an array into a single-level structure. */
 exports.flatten = require('./functions/multi/flatten');
 /** Find duplicate elements in a object, string or an array. */
 exports.intersection = require('./functions/multi/intersection');
@@ -27,6 +27,7 @@ exports.merge = require('./functions/multi/merge');
 exports.reverse = require('./functions/multi/reverse');
 /** Randomly shuffle an object, array or a string. */
 exports.shuffle = require('./functions/multi/shuffle');
+/** Sort an object, array or a string alphabetically or ascendingly. */
 exports.sort = require('./functions/multi/sort');
 
 /** Convert a string to aLtErNaTiNgCaSe. */
@@ -57,7 +58,7 @@ exports.escapeHtml = require('./functions/string/html/escapeHtml');
 exports.unescapeHtml = require('./functions/string/html/unescapeHtml');
 /** Count the number of occurrences of a substring in a string. */
 exports.occurrences = require('./functions/string/occurrences');
-/** Check if a string is palindrome */
+/** Check if a string is palindrome. */
 exports.palindrome = require('./functions/string/palindrome');
-/** Truncate a string */
+/** Truncate a string. */
 exports.truncate = require('./functions/string/truncate');
