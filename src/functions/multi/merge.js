@@ -3,12 +3,23 @@ function isType(item) {
 }
 
 module.exports = function merge(target, ...datas) {
-    if (!isType(target)) return target;
-
-    if (!datas.length) return target;
+    if (!isType(target) || !datas.length) return target;
     else if (datas.every(isType)) {
-        if (Array.isArray(target)) return [].concat(target, ...datas);
-        else if (typeof item === 'object') return Object.assign({}, target, ...datas);
+        if (Array.isArray(target)) return target.concat(...datas);
+        else if (typeof target === 'object') {
+            for (const data of datas) {
+                for (const key in data) {
+                    if (data.hasOwnProperty(key)) {
+                        if (data[key] instanceof Object) {
+                            if (!target[key] || typeof target[key] !== 'object') target[key] = {};
+                            target[key] = merge(target[key], data[key]);
+                        } else target[key] = data[key];
+                    }
+                }
+            }
+
+            return target;
+        }
 
         return datas.reduce((acc, str) => acc + str, target);
     }

@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ambushjs/ambush/compare/v1.1.0...v1.2.0) (2023-10-30)
+
+
+### Features
+
+* Add multi-type support for `reverse` ([7b1d2b7](https://github.com/ambushjs/ambush/commits/7b1d2b73ee4376b01215f921da6f5d067d934768))
+* Move & add comments to `index.js` ([6972faa](https://github.com/ambushjs/ambush/commits/6972faa6fbc02e6243400fc90aacb93bce4a14f7))
+* New multitype `sort` function ([378691b](https://github.com/ambushjs/ambush/commits/378691b0508cb5773e2df8839d735b46a5ae5c8b))
+* **types:** Update declarations for `merge` ([c14f746](https://github.com/ambushjs/ambush/commits/c14f7463afac81dbe0b478c4ffb94a1a9c66cb23))
+
+
+### Bug Fixes
+
+* ESLint formatting and test issues ([ab48ccb](https://github.com/ambushjs/ambush/commits/ab48ccb5de9f8114e7dc783ea5b6d468263702d4))
+
 ## [1.1.0](https://github.com/ambushjs/ambush/compare/v1.0.1...v1.1.0) (2023-10-26)
 
 

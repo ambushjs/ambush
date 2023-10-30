@@ -1,7 +1,5 @@
 # Contributing
 
-We welcome contributions from the community to improve and enhance this project. Whether you're a developer, designer, tester, or have ideas to share, your help is valuable.
-
 Please follow these guidelines to contribute:
 
 ### Reporting Issues

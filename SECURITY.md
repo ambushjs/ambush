@@ -1,10 +1,10 @@
 # Security Policy
-<!-- ## Supported Versions
 
 This security policy applies to the following version of the package:
 
-- Unreleased
-- Unreleased -->
+- v1.2.0
+- v1.1.0
+- v1.0.1
 
 ## Reporting a Vulnerability
 
@@ -12,7 +12,7 @@ If you believe you have found a security vulnerability in this package, please r
 
 If you ever find a vulnerability, you can either [create a Github issue](https://github.com/ambush/ambush/issues), or follow these steps:
 
-1. Email [thezeptar@gmail.com](mailto:thezeptar@gmail.com) with your findings.
+1. Email [ambush.js.org@gmail.com](mailto:ambush.js.org@gmail.com) with your findings.
 
 2. Please include the following information in your email:
    - A detailed description of the vulnerability.
