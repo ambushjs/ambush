@@ -15,8 +15,10 @@ export function printColor<T>(type: ColorTypes, ...args: T[]): void;
 export function daysAgo(days: number): DateInfo;
 export function leapYear(year?: number): boolean;
 
-export function average(numbers: number[]): number;
 export function fibonacci(n: number, generateArray: boolean): number | number[];
+export function mean(numbers: number[]): number;
+export function median(numbers: number[]): number;
+export function mode(numbers: number[]): number | number[];
 export function pascal(n: number): number[][];
 
 export function chunk<T>(data: T, size: number): T;

@@ -1,4 +1,4 @@
-module.exports = function average(numbers) {
+module.exports = function mean(numbers) {
     if (!numbers.length) return 0;
 
     let sum = 0;

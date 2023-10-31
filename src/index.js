@@ -16,10 +16,14 @@ exports.daysAgo = require('./functions/date/daysAgo');
 /** Check if a year is a leap year. */
 exports.leapYear = require('./functions/date/leapYear');
 
-/** Find the average in an array with numbers. */
-exports.average = require('./functions/math/average');
 /** Find the nth, or generate an array of the Fibonacci sequence. */
 exports.fibonacci = require('./functions/math/fibonacci');
+/** Find the mean (average) in an array with numbers. */
+exports.mean = require('./functions/math/mean');
+/** Find the median (middle) in an array with numbers. */
+exports.median = require('./functions/math/median');
+/** Find the mode (common) in an array with numbers. */
+exports.mode = require('./functions/math/mode');
 /** Generate an array of the Pascal's triangle with the specified length. */
 exports.pascal = require('./functions/math/pascal');
 
