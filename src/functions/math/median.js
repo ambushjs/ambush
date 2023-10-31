@@ -6,4 +6,4 @@ module.exports = function median(numbers) {
     return numbers.length % 2 === 0 ?
         (numbers[middle - 1] + numbers[middle]) / 2 :
         numbers[middle];
-}
+};

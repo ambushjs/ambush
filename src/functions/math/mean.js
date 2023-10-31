@@ -8,4 +8,4 @@ module.exports = function mean(numbers) {
     }
 
     return sum / numbers.length;
-}
+};

@@ -10,4 +10,4 @@ module.exports = function daysAgo(days) {
         localeDate: targetDate.toLocaleDateString(),
         date: targetDate.toDateString(),
     };
-}
+};

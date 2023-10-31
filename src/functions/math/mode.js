@@ -4,7 +4,7 @@ module.exports = function mode(numbers) {
     const numberCount = {};
 
     let maxCount = 0;
-    let mode = [];
+    let array = [];
 
     for (const number of numbers) {
         if (!numberCount[number]) numberCount[number] = 1;
@@ -12,9 +12,9 @@ module.exports = function mode(numbers) {
 
         if (numberCount[number] > maxCount) {
             maxCount = numberCount[number];
-            mode = [number];
-        } else if (numberCount[number] === maxCount && !mode.includes(number)) mode.push(number);
+            array = [number];
+        } else if (numberCount[number] === maxCount && !array.includes(number)) array.push(number);
     }
 
-    return mode.length === 1 ? mode[0] : mode;
-}
+    return array.length === 1 ? array[0] : array;
+};
