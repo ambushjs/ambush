@@ -11,6 +11,18 @@ exports.colors = require('./colors/ansiCodes');
 /** Print an input to the console with custom colors. */
 exports.printColor = require('./colors/print');
 
+/** Find exact information of the date of the number of days ago. */
+exports.daysAgo = require('./functions/date/daysAgo');
+/** Check if a year is a leap year. */
+exports.leapYear = require('./functions/date/leapYear');
+
+/** Find the average in an array with numbers. */
+exports.average = require('./functions/math/average');
+/** Find the nth, or generate an array of the Fibonacci sequence. */
+exports.fibonacci = require('./functions/math/fibonacci');
+/** Generate an array of the Pascal's triangle with the specified length. */
+exports.pascal = require('./functions/math/pascal');
+
 /** Chunk an object or an array. */
 exports.chunk = require('./functions/multi/chunk');
 /** Remove duplicated elements in an object or an array. */

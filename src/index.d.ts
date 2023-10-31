@@ -1,9 +1,23 @@
 import ansiCodes from './colors/ansiCodes';
 
-type Data = string | number | symbol;
 type ColorTypes = keyof typeof ansiCodes;
 
+interface DateInfo {
+    day: number;
+    year: number;
+    week: number;
+    localeDate: string;
+    date: string;
+}
+
 export function printColor<T>(type: ColorTypes, ...args: T[]): void;
+
+export function daysAgo(days: number): DateInfo;
+export function leapYear(year?: number): boolean;
+
+export function average(numbers: number[]): number;
+export function fibonacci(n: number, generateArray: boolean): number | number[];
+export function pascal(n: number): number[][];
 
 export function chunk<T>(data: T, size: number): T;
 export function deduplicate<T>(data: T): T;
