@@ -26,7 +26,7 @@ In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritiz
 Get started with Ambush by setting up the environment.
 
 <h2>
-    <a href="https://ambush.js.org/getting-started/install">Installation</a>
+    <a href="https://ambush.js.org/docs/getting-started/install">Installation</a>
 </h2>
 
 You will need [Node.js](https://nodejs.org) 14.0.0 or newer before installing by your preferred package manager ([npm](https://npmjs.com), [yarn](https://yarnpkg.com), or [pnpm](https://pnpm.io)).
@@ -35,7 +35,9 @@ You will need [Node.js](https://nodejs.org) 14.0.0 or newer before installing by
     <img src="https://nodei.co/npm/ambush.png?mini=true" alt="npm install ambush" />
 </a>
 
-## [Usage](https://ambush.js.org/docs/getting-started/usage)
+<h2>
+    <a href="https://ambush.js.org/docs/getting-started/usage">Usage</a>
+</h2>
 
 You can `import` or `require()` this package by the name of your choice (preferably `ab`), or object destructure a specific module:
 
