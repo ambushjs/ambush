@@ -35,18 +35,18 @@ module.exports = function difference(a, b) {
 
         return result;
     } else if (typeof a === 'string' && typeof b === 'string') {
-        let result = '';
+        let result = [];
 
         for (const char of a) {
-            if (!b.includes(char)) result += char;
+            if (!b.includes(char)) result.push(char);
         }
 
         for (const char of b) {
-            if (!a.includes(char)) result += char;
+            if (!a.includes(char)) result.push(char);
         }
 
         return result;
     }
 
-    return [];
+    return null;
 };
