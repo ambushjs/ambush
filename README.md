@@ -73,6 +73,8 @@ Final output: `[1, 2, 3, 4]`
 
 ---
 
+Check out <a href="https://npmjs.com/package/@ambush/image">`@ambush/image`</a> for image processing functions.
+
 We welcome contributions from the community to improve and enhance this project. Whether you're a developer, designer, tester, or have ideas to share, your help is valuable. If you're willing to contribute and get involved, please see [the contributing guide](https://github.com/ambushjs/ambush/tree/main/CONTRIBUTING.md) file for more details.
 
 We adhere to the [Code of Conduct](https://github.com/ambushjs/ambush/tree/main/CODE_OF_CONDUCT.md) to ensure a respectful and inclusive community. Please review it and follow the guidelines when participating in this project.
