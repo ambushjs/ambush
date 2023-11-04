@@ -31,7 +31,7 @@ export function reverse<T>(data: T): T;
 export function shuffle<T>(data: T): T;
 export function sort<T>(data: T, caseSensitive?: boolean): T;
 
-export function alphaCase(input: string): string;
+export function altCase(input: string): string;
 export function camelCase(input: string): string;
 export function kebabCase(input: string): string;
 export function lowerCase(input: string): string;
