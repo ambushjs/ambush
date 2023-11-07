@@ -61,7 +61,6 @@
         "no-new-wrappers": "error",
         "no-new": "error",
         "no-octal-escape": "error",
-        "no-param-reassign": "error",
         "no-proto": "error",
         "no-redeclare": "error",
         "no-script-url": "error",
@@ -138,6 +137,7 @@
             }
         ],
         "camelcase": "warn",
+        "curly": "error",
         "comma-style": [
             "warn",
             "last"
@@ -172,6 +172,7 @@
         "no-array-constructor": "warn",
         "no-bitwise": "off",
         "no-continue": "off",
+        "no-control-regex": "off",
         "no-inline-comments": "off",
         "no-lonely-if": "warn",
         "no-mixed-spaces-and-tabs": "error",

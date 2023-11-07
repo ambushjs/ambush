@@ -1,8 +1,6 @@
 module.exports = function sentenceCase(input) {
     const sentences = input.match(/[^.!?]+[.!?]*/g);
 
-    if (!sentences) return input;
-
     const sentenceCaseSentences = sentences.map((output) => {
         const sentence = output.trim();
 

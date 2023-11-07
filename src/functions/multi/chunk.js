@@ -24,5 +24,5 @@ module.exports = function chunk(data, size) {
         }
 
         return chunked;
-    } else return [];
+    } else {return [];}
 };

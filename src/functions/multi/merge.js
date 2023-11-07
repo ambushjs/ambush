@@ -7,19 +7,17 @@ function hasOwn(thisArg, arg) {
 }
 
 module.exports = function merge(target, ...datas) {
-    if (!isType(target) || !datas.length) return target;
-    else if (datas.every(isType)) {
-        if (Array.isArray(target)) return target.concat(...datas);
-        else if (typeof target === 'object') {
+    if (!isType(target) || !datas.length) {return target;} else if (datas.every(isType)) {
+        if (Array.isArray(target)) {return target.concat(...datas);} else if (typeof target === 'object') {
             for (const data of datas) {
                 for (const key in data) {
-                    if (!hasOwn(data, key)) continue;
-                    if (key === '__proto__' || key === 'constructor') continue;
+                    if (!hasOwn(data, key)) {continue;}
+                    if (key === '__proto__' || key === 'constructor') {continue;}
 
                     if (hasOwn(target, key) && isType(data[key])) {
-                        if (!isType(target[key])) target[key] = {};
+                        if (!isType(target[key])) {target[key] = {};}
                         target[key] = merge(target[key], data[key]);
-                    } else target[key] = data[key];
+                    } else {target[key] = data[key];}
                 }
             }
 

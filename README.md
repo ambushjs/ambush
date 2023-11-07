@@ -48,28 +48,26 @@ import ab from 'ambush';
 
 Now, you can start implementing Ambush in your code! See all the available functions and the full documentation [here](https://ambush.js.org).
 
+---
+
 Here's a quick example merging two arrays together.
 
 ```js
 const arr1 = [4, 2, 1];
 const arr2 = [2, 1, 3];
-const output = ab.merge(arr1, arr2);
 
-// Will be [4, 2, 1, 2, 1, 3]
-console.log(output);
+ab.merge(arr1, arr2);
+// => [4, 2, 1, 2, 1, 3]
 ```
 
-You can see that the `outputArr` array has duplicates in it. To remove duplicates, we can easily call `deduplicate()` like this:
+You can see that the `outputArr` array has duplicates in it. Let's try removing duplicates and sorting the array alphabetically:
 
 ```js
-// Will be [4, 2, 1, 3]
 ab.deduplicate(outputArr);
-
-// Then, let's sort it ascendingly.
+// => [4, 2, 1, 3]
 ab.sort(outputArr);
+// => [1, 2, 3, 4]
 ```
-
-Final output: `[1, 2, 3, 4]`
 
 ---
 
