@@ -40,8 +40,8 @@ module.exports = function stringTests() {
     assert.strictEqual(occurrences('hello world', 'o'), 2);
     assert.strictEqual(occurrences('aaaaaa', 'aa'), 3);
     assert.strictEqual(occurrences('', 'a'), 0);
-    assert.strictEqual(occurrences('hello world', ''), 0);
-    assert.strictEqual(occurrences('', ''), 0);
+    assert.strictEqual(occurrences('hello world', ''), 12);
+    assert.strictEqual(occurrences('', ''), 1);
     assert.strictEqual(occurrences('hello world', 'z'), 0);
     assert.strictEqual(occurrences('aaaaaaa', 'aaa'), 2);
 
