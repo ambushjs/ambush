@@ -1,7 +1,3 @@
-import ansiCodes from './colors/ansiCodes';
-
-type ColorTypes = keyof typeof ansiCodes;
-
 interface DateInfo {
     day: number;
     year: number;
@@ -9,8 +5,6 @@ interface DateInfo {
     localeDate: string;
     date: string;
 }
-
-export function printColor<T>(type: ColorTypes, ...args: T[]): void;
 
 export function daysAgo(days: number): DateInfo;
 export function leapYear(year?: number): boolean;
