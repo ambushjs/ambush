@@ -1,6 +1,6 @@
 {
   "name": "ambush",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "A minimal library to streamline your code.",
   "license": "Apache-2.0",
   "author": "Zeptar <thezeptar@gmail.com>",
@@ -34,9 +34,5 @@
     "utilities",
     "javascript",
     "utils"
-  ],
-  "devDependencies": {
-    "eslint": "^8.52.0",
-    "standard-version": "^9.5.0"
-  }
+  ]
 }

@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ambushjs/ambush/compare/v1.2.1...v1.3.0) (2023-11-07)
+
+
+### Features
+
+* **functions:** Add new date & math functions ([0094224](https://github.com/ambushjs/ambush/commits/0094224763bcf42d3030a38ec901669d51d0c5c0))
+* **math:** Add new `factorial()` function ([ea114a1](https://github.com/ambushjs/ambush/commits/ea114a169f2efa6cbf508d27d212d100f6d52af8))
+* **math:** Measures of central tendency ([94bccf0](https://github.com/ambushjs/ambush/commits/94bccf0b773caf0254d79847d22d7e23727743d1))
+
+
+### Bug Fixes
+
+* **difference:** Output array instead of string ([a3b3a47](https://github.com/ambushjs/ambush/commits/a3b3a473d8fa96616ed0f0bcd697b037de482588))
+* **types:** Incorrect type name for `altCase` ([db51176](https://github.com/ambushjs/ambush/commits/db51176342651ed4b88f2f09cdf838d746b77522))
+
+
+### Documentation
+
+* **links:** Add links to external packages ([b10f5a2](https://github.com/ambushjs/ambush/commits/b10f5a242af8a371d0686013f03784b6fd353ff0))
+* **links:** Fix broken links to docs ([b3f8299](https://github.com/ambushjs/ambush/commits/b3f829980659c50d53b754a05ed68d51548c0b4f))
+* **links:** Fix misleading build link ([938a5cb](https://github.com/ambushjs/ambush/commits/938a5cb29fdc9b28028880af771e6cf4d6104cd5))
+* **logo:** Change `ambush` logo ([723027c](https://github.com/ambushjs/ambush/commits/723027c704b67a1b987467c6ed23bddcea486dcb))
+
 ## [1.2.1](https://github.com/ambushjs/ambush/compare/v1.2.0...v1.2.1) (2023-10-30)
 
 
