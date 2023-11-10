@@ -27,6 +27,10 @@
     "test": "npm start && node tests"
   },
   "typings": "./src/index.d.ts",
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "standard-version": "^9.5.0"
+  },
   "keywords": [
     "javascript",
     "library",
