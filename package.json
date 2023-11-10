@@ -24,19 +24,19 @@
     "fix": "eslint . --fix",
     "lint": "eslint .",
     "start": "node src",
-    "test": "node src && node tests"
+    "test": "npm start && node tests"
   },
   "typings": "./src/index.d.ts",
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "standard-version": "^9.5.0"
+  },
   "keywords": [
+    "javascript",
     "library",
     "nodejs",
     "tools",
     "utilities",
-    "javascript",
     "utils"
-  ],
-  "devDependencies": {
-    "eslint": "^8.52.0",
-    "standard-version": "^9.5.0"
-  }
+  ]
 }

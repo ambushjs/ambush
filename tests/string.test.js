@@ -50,9 +50,9 @@ module.exports = function stringTests() {
     assert.strictEqual(palindrome(''), true);
     assert.strictEqual(palindrome('a'), true);
 
-    assert.strictEqual(truncate('This is a long string', 10), 'This is a...');
-    assert.strictEqual(truncate('Short', 10), 'Short');
-    assert.strictEqual(truncate('This is a long string', 10, '...more'), 'This is a...more');
+    assert.strictEqual(truncate('This is a long string', { length: 10 }), 'This is a...');
+    assert.strictEqual(truncate('Short', { length: 10 }), 'Short');
+    assert.strictEqual(truncate('This is a long string', { length: 10, ending: '...more'}), 'This is a...more');
     assert.strictEqual(truncate('This is a long string'), 'This is a...');
-    assert.strictEqual(truncate('', 10), '');
+    assert.strictEqual(truncate('', { length: 10 }), '');
 }

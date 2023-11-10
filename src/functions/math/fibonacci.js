@@ -1,14 +1,14 @@
-module.exports = function fibonacci(n, generateArray) {
+module.exports = function fibonacci(n, array) {
     let a = 1, b = 0;
-    const arrayN = generateArray ? [b] : undefined;
+    const arrayN = [b];
 
     while (n--) {
         [a, b] = [a + b, a];
 
-        if (generateArray) {
+        if (array) {
             arrayN.push(b);
         }
     }
 
-    return generateArray ? arrayN : b;
-};
+    return array ? arrayN : b;
+}

@@ -10,7 +10,15 @@ function shuffleArray(arr) {
 }
 
 module.exports = function shuffle(data) {
-    if (Array.isArray(data)) {return shuffleArray(data);} else if (typeof data === 'string') {return shuffleArray(data.split('')).join('');} else if (typeof data === 'object') {
+    if (Array.isArray(data)) {
+        return shuffleArray(data);
+    }
+
+    if (typeof data === 'string') {
+        return shuffleArray(data.split('')).join('');
+    }
+
+    if (typeof data === 'object') {
         if (Object.keys(data).length === 0) {return data;}
 
         const keys = Object.keys(data);
@@ -22,5 +30,7 @@ module.exports = function shuffle(data) {
         }
 
         return shuffledData;
-    } else {return data;}
-};
+    }
+
+    return data;
+}

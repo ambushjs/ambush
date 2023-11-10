@@ -20,4 +20,4 @@ module.exports = function mode(numbers) {
     }
 
     return array.length === 1 ? array[0] : array;
-};
+}

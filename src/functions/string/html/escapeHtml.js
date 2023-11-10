@@ -9,4 +9,4 @@ const escapeMap = {
 
 module.exports = function escapeHtml(input) {
     return input.replace(/["&'<>`]/g, (match) => escapeMap[match] ?? match);
-};
+}

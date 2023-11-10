@@ -6,4 +6,4 @@ module.exports = function altCase(input) {
         currentCase = !currentCase;
         return !currentCase === true ? split.toLowerCase() : split.toUpperCase();
     }).join('');
-};
+}

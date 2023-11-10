@@ -3,4 +3,4 @@ module.exports = function switchCase(input) {
         .split('')
         .map((char) => char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase())
         .join('');
-};
+}

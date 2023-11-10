@@ -7,7 +7,7 @@
  */
 
 /** An object with ANSI escape codes. */
-exports.colors = require('./functions/objects/ansiCodes');
+exports.colors = require('./functions/objects/colors');
 
 /** Find exact information of the date of the number of days ago. */
 exports.daysAgo = require('./functions/date/daysAgo');

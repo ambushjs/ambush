@@ -1,7 +1,7 @@
 module.exports = function sentenceCase(input) {
     const sentences = input.match(/[^.!?]+[.!?]*/g);
 
-    const sentenceCaseSentences = sentences.map((output) => {
+    const sentenceCaseSentences = sentences?.map((output) => {
         const sentence = output.trim();
 
         return sentence.length > 0 ?
@@ -9,5 +9,5 @@ module.exports = function sentenceCase(input) {
             sentence;
     });
 
-    return sentenceCaseSentences.join(' ');
-};
+    return sentenceCaseSentences?.join(' ');
+}

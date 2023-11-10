@@ -20,8 +20,11 @@
     <a href="https://npmjs.com/package/ambush">Package</a>
 </h6>
 
-Ambush is a minimal library that streamlines and brings plenty of handy utility features to simplify your coding tasks.
-In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritizes performance and is tailored to enhance your development experience while keeping things lean and efficient.
+Ambush is a minimal library that streamlines and brings plenty of handy utility features to simplify your projects. Ambush is an acronym for which provides **A**dvanced **M**ulti-purpose **B**enchmark **U**tility **S**et **H**elpers for your code.
+
+In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritizes performance and is tailored to enhance your development experience while keeping things lean and efficient. Ambush also has multi-type functions which supports multiple data types.
+
+<img width="550px" src="./assets/bar.png"></img>
 
 Get started with Ambush by setting up the environment.
 
@@ -65,6 +68,7 @@ You can see that the `outputArr` array has duplicates in it. Let's try removing 
 ```js
 ab.deduplicate(outputArr);
 // => [4, 2, 1, 3]
+
 ab.sort(outputArr);
 // => [1, 2, 3, 4]
 ```

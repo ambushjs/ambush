@@ -4,11 +4,13 @@ module.exports = function chunk(data, size) {
 
         for (let i = 0; i < data.length; i += size) {
             const chunked = data.slice(i, i + size);
-            chunkedArray.push(chunked);
+            chunkedArray.push(...chunked);
         }
 
         return chunkedArray;
-    } else if (typeof data === 'object' && data !== null) {
+    }
+
+    if (typeof data === 'object') {
         const keys = Object.keys(data);
         const chunked = [];
 
@@ -24,5 +26,7 @@ module.exports = function chunk(data, size) {
         }
 
         return chunked;
-    } else {return [];}
-};
+    }
+
+    return null;
+}

@@ -4,7 +4,7 @@ function pascalRecursive(n, a) {
     }
 
     const prevRow = a[a.length - 1];
-    let curRow = [1];
+    const curRow = [1];
 
     for (let i = 1; i < prevRow.length; i++) {
         curRow[i] = prevRow[i] + prevRow[i - 1];
@@ -17,16 +17,12 @@ function pascalRecursive(n, a) {
 }
 
 module.exports = function pascal(n) {
-    if (!n) {
-        throw new TypeError('[Ambush] Parameter is missing');
-    }
-
-    let triangleA = pascalRecursive(n, [[1]]);
-    let triangles = [];
+    const triangleA = pascalRecursive(n, [[1]]);
+    const triangles = [];
 
     for (let i = 0; i < triangleA.length; i++) {
         triangles.push(triangleA[i]);
     }
 
     return triangles;
-};
+}
