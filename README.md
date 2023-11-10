@@ -24,7 +24,7 @@ Ambush is a minimal library that streamlines and brings plenty of handy utility 
 
 In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritizes performance and is tailored to enhance your development experience while keeping things lean and efficient. Ambush also has multi-type functions which supports multiple data types.
 
-<img width="550px" src="./assets/bar.png"></img>
+<img width="550px" src="https://raw.githubusercontent.com/ambushjs/ambush/main/assets/bar.png"></img>
 
 Get started with Ambush by setting up the environment.
 

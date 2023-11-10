@@ -1,6 +1,6 @@
 {
   "name": "ambush",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A minimal library to streamline your code.",
   "license": "Apache-2.0",
   "author": "Zeptar <thezeptar@gmail.com>",
@@ -27,10 +27,6 @@
     "test": "npm start && node tests"
   },
   "typings": "./src/index.d.ts",
-  "devDependencies": {
-    "eslint": "^8.53.0",
-    "standard-version": "^9.5.0"
-  },
   "keywords": [
     "javascript",
     "library",
