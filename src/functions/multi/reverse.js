@@ -19,4 +19,4 @@ module.exports = function reverse(data) {
     }
 
     return null;
-}
+};

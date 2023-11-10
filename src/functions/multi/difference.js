@@ -69,4 +69,4 @@ module.exports = function difference(a, b) {
     }
 
     return null;
-}
+};

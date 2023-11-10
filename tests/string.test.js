@@ -17,7 +17,7 @@ const {
     truncate,
 } = require('../src');
 
-const assert = require('assert');
+const assert = require('assert/strict');
 
 module.exports = function stringTests() {
     assert.strictEqual(altCase('Hello world!'), 'hElLo wOrLd!');

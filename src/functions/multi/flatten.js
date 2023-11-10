@@ -21,4 +21,4 @@ module.exports = function flatten(data, joiner = '.') {
     }
 
     return null;
-}
+};

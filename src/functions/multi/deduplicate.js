@@ -20,4 +20,4 @@ module.exports = function deduplicate(data) {
     }
 
     return null;
-}
+};

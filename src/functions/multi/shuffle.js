@@ -33,4 +33,4 @@ module.exports = function shuffle(data) {
     }
 
     return data;
-}
+};

@@ -19,4 +19,4 @@ module.exports = function sort(data) {
     }
 
     return null;
-}
+};

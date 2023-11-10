@@ -9,4 +9,4 @@ module.exports = function titleCase(input) {
     }
 
     return words.join(' ');
-}
+};

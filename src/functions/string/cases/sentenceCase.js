@@ -10,4 +10,4 @@ module.exports = function sentenceCase(input) {
     });
 
     return sentenceCaseSentences?.join(' ');
-}
+};

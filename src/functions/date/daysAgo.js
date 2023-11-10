@@ -14,4 +14,4 @@ module.exports = function daysAgo(days) {
     const date = targetDate.toISOString().split('T')[0];
 
     return { day, year, week, date };
-}
+};

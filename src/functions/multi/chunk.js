@@ -29,4 +29,4 @@ module.exports = function chunk(data, size) {
     }
 
     return null;
-}
+};

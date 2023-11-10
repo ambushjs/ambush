@@ -25,4 +25,4 @@ module.exports = function pascal(n) {
     }
 
     return triangles;
-}
+};

@@ -49,4 +49,4 @@ module.exports = function merge(target, ...datas) {
     }
 
     return null;
-}
+};

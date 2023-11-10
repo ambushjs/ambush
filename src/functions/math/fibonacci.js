@@ -11,4 +11,4 @@ module.exports = function fibonacci(n, array) {
     }
 
     return array ? arrayN : b;
-}
+};
