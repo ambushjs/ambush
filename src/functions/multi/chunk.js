@@ -1,10 +1,12 @@
 module.exports = function chunk(data, size) {
+    if (size < 1) throw new RangeError('Cannot chunk with a size less than 1');
+
     if (Array.isArray(data)) {
         const chunkedArray = [];
 
         for (let i = 0; i < data.length; i += size) {
             const chunked = data.slice(i, i + size);
-            chunkedArray.push(...chunked);
+            chunkedArray.push(chunked);
         }
 
         return chunkedArray;

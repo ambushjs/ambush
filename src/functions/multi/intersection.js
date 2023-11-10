@@ -1,30 +1,46 @@
-function hasOwn(data, key) {
-    return Object.prototype.hasOwnProperty.call(data, key);
+function hasOwn(arg, key) {
+    return Object.prototype.hasOwnProperty.call(arg, key);
 }
 
 module.exports = function intersection(...datas) {
     const firstItemType = typeof datas[0];
 
     if (Array.isArray(datas[0])) {
-        return datas[0].filter((value) => {
-            return datas.every((item) => {
-                return Array.isArray(item) ? item.includes(value) : hasOwn(item, value);
-            });
-        });
-    } else if (firstItemType === 'object') {
-        const result = {};
+        const result = [];
 
-        for (const key in datas[0]) {
-            if (datas.every((item) => hasOwn(item, key) && item[key] === datas[0][key])) {
-                result[key] = datas[0][key];
+        outerLoop: for (const value of datas[0]) {
+            for (const item of datas) {
+                if (!(Array.isArray(item) ? item.includes(value) : hasOwn(item, value))) {
+                    continue outerLoop;
+                }
             }
+
+            result.push(value);
         }
 
         return result;
-    } else if (firstItemType === 'string') {
+    }
+
+    if (firstItemType === 'object') {
+        const result = {};
+
+        outerLoop: for (const key in datas[0]) {
+            for (const item of datas) {
+                if (!(hasOwn(item, key) && item[key] === datas[0][key])) {
+                    continue outerLoop;
+                }
+            }
+
+            result[key] = datas[0][key];
+        }
+
+        return result;
+    }
+
+    if (firstItemType === 'string') {
         const result = new Set();
 
-        for (const char in datas[0]) {
+        for (const char of datas[0]) {
             if (datas.every((item) => typeof item === 'string' && item.includes(char))) {
                 result.add(char);
             }
@@ -32,6 +48,4 @@ module.exports = function intersection(...datas) {
 
         return Array.from(result);
     }
-
-    return null;
 };

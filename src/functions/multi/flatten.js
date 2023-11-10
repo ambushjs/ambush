@@ -1,24 +1,44 @@
 module.exports = function flatten(data, joiner = '.') {
-    if (Array.isArray(data)) {
-        const result = [];
+    const result = Array.isArray(data) ? [] : {};
 
-        data.forEach((item, index) => {
-            result[index] = flatten(item, joiner);
-        });
+    (function recurse(current, property) {
+        if (Object(current) !== current) {
+            if (Array.isArray(data)) {
+                result.push(current);
+            } else {
+                result[property] = current;
+            }
+        } else if (Array.isArray(current)) {
+            for (let i = 0; i < current.length; i++) {
+                recurse(current[i], property ? `${property}[${i}]` : `[${i}]`);
+            }
 
-        return result;
-    } else if (typeof data === 'object' && data !== null) {
-        const result = {};
+            if (current.length === 0) {
+                if (Array.isArray(data)) {
+                    result.push([]);
+                } else {
+                    result[property] = [];
+                }
+            }
+        } else {
+            let isEmpty = true;
 
-        for (const key in data) {
-            if (Object.prototype.hasOwnProperty.call(data, key)) {
-                const flattened = flatten(data[key], joiner);
-                result[key] = flattened;
+            for (const p in current) {
+                if (Object.prototype.hasOwnProperty.call(current, p)) {
+                    isEmpty = false;
+                    recurse(current[p], property ? `${property}${joiner}${p}` : p);
+                }
+            }
+
+            if (isEmpty && property) {
+                if (Array.isArray(data)) {
+                    result.push({});
+                } else {
+                    result[property] = {};
+                }
             }
         }
+    }(data, ''));
 
-        return result;
-    }
-
-    return null;
+    return result;
 };

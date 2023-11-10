@@ -19,5 +19,9 @@ module.exports = function deduplicate(data) {
         return deduplicated;
     }
 
+    if (typeof data === 'string') {
+        return deduplicate(data.split(''));
+    }
+
     return null;
 };

@@ -3,10 +3,6 @@ function hasOwn(data, key) {
 }
 
 module.exports = function difference(a, b) {
-    if (!a || !b) {
-        throw new TypeError('Cannot find difference between nullable values.');
-    }
-
     if (Array.isArray(a) && Array.isArray(b)) {
         const set1 = new Set(a);
         const set2 = new Set(b);
