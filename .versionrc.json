@@ -4,10 +4,11 @@
         { "type": "fix", "section": "Bug Fixes" },
         { "type": "perf", "section": "Performance" },
         { "type": "docs", "section": "Documentation" },
+        { "type": "typings", "section": "Typings" },
+        { "type": "refactor", "section": "Refactor" },
         { "type": "ci", "hidden": true },
         { "type": "chore", "hidden": true },
         { "type": "style", "hidden": true },
-        { "type": "refactor", "hidden": true },
         { "type": "test", "hidden": true }
     ],
     "commitUrlFormat": "https://github.com/ambushjs/ambush/commits/{{hash}}",
