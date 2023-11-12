@@ -6,9 +6,6 @@
  * @license Apache License 2.0
  */
 
-/** An object with ANSI escape codes. */
-exports.colors = require('./functions/objects/colors');
-
 /** Find exact information of the date of the number of days ago. */
 exports.daysAgo = require('./functions/date/daysAgo');
 /** Check if a year is a leap year. */
@@ -18,6 +15,10 @@ exports.leapYear = require('./functions/date/leapYear');
 exports.factorial = require('./functions/math/factorial');
 /** Find the nth, or generate an array of the Fibonacci sequence. */
 exports.fibonacci = require('./functions/math/fibonacci');
+/** Check if a number is an even number. */
+exports.isEven = require('./functions/math/isEven');
+/** Check if a number is a prime number. */
+exports.isPrime = require('./functions/math/isPrime');
 /** Find the mean (average) in an array with numbers. */
 exports.mean = require('./functions/math/mean');
 /** Find the median (middle) in an array with numbers. */
@@ -33,6 +34,8 @@ exports.chunk = require('./functions/multi/chunk');
 exports.deduplicate = require('./functions/multi/deduplicate');
 /** Find the symmetric difference between an object, array or a string. */
 exports.difference = require('./functions/multi/difference');
+/** Get the file extension from the file name. */
+exports.fileExt = require('./functions/multi/fileExt');
 /** Unnest a nested object or an array into a single-level structure. */
 exports.flatten = require('./functions/multi/flatten');
 /** Find duplicate elements in a object, string or an array. */
@@ -45,6 +48,9 @@ exports.reverse = require('./functions/multi/reverse');
 exports.shuffle = require('./functions/multi/shuffle');
 /** Sort an object, array or a string alphabetically or ascendingly. */
 exports.sort = require('./functions/multi/sort');
+
+/** An object with ANSI escape codes. */
+exports.colors = require('./functions/objects/colors');
 
 /** Convert a string to aLtErNaTiNgCaSe. */
 exports.altCase = require('./functions/string/cases/altCase');
