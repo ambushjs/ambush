@@ -50,7 +50,7 @@ module.exports = function multiTests() {
     deepStrictEqual(intersection('abc', 'bcd'), ['b', 'c']);
     deepStrictEqual(intersection('abc', 'xyz'), []);
     deepStrictEqual(intersection('', ''), []);
-    deepStrictEqual(intersection([ 1, 2, 3 ], [2, 3, 4]), [2, 3]);
+    deepStrictEqual(intersection([1, 2, 3], [2, 3, 4]), [2, 3]);
     deepStrictEqual(intersection([1, 2, 3], [7, 8, 9]), []);
     deepStrictEqual(intersection([], []), []);
     deepStrictEqual(intersection({ a: 1, b: 2, c: 3 }, { b: 2, c: 3, d: 4 }), { b: 2, c: 3 });

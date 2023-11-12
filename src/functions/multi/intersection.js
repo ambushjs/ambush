@@ -8,10 +8,10 @@ module.exports = function intersection(...datas) {
     if (Array.isArray(datas[0])) {
         const result = [];
 
-        for (const value of datas[0]) {
+        valueLoop: for (const value of datas[0]) {
             for (const item of datas) {
                 if (!(Array.isArray(item) ? item.includes(value) : hasOwn(item, value))) {
-                    continue;
+                    continue valueLoop;
                 }
             }
 
@@ -24,11 +24,11 @@ module.exports = function intersection(...datas) {
     if (firstItemType === 'object') {
         const result = {};
 
-        for (const key in datas[0]) {
+        valueLoop: for (const key in datas[0]) {
             if (hasOwn(datas[0], key)) {
                 for (const item of datas) {
                     if (!(hasOwn(item, key) && item[key] === datas[0][key])) {
-                        continue;
+                        continue valueLoop;
                     }
                 }
 
