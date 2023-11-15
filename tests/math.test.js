@@ -33,4 +33,4 @@ module.exports = function mathTests() {
     assert.deepStrictEqual(pascal(3), [[1], [1, 1], [1, 2, 1]]);
     assert.deepStrictEqual(pascal(4), [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1]]);
     assert.deepStrictEqual(pascal(0), [[1]]);
-}
+};

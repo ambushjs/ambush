@@ -55,4 +55,4 @@ module.exports = function stringTests() {
     assert.strictEqual(truncate('This is a long string', { length: 10, ending: '...more'}), 'This is a...more');
     assert.strictEqual(truncate('This is a long string'), 'This is a...');
     assert.strictEqual(truncate('', { length: 10 }), '');
-}
+};

@@ -13,4 +13,4 @@ module.exports = function dateTests() {
     assert.strictEqual(leapYear(2023), false);
     assert.strictEqual(leapYear(2000), true);
     assert.strictEqual(leapYear(1900), false);
-}
+};

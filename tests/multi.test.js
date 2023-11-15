@@ -4,10 +4,6 @@ const {
     difference,
     flatten,
     intersection,
-    merge,
-    reverse,
-    shuffle,
-    sort,
 } = require('../src');
 
 const { deepStrictEqual } = require('assert/strict');
@@ -56,4 +52,4 @@ module.exports = function multiTests() {
     deepStrictEqual(intersection({ a: 1, b: 2, c: 3 }, { b: 2, c: 3, d: 4 }), { b: 2, c: 3 });
     deepStrictEqual(intersection({ a: 1, b: 2, c: 3 }, { x: 7, y: 8, z: 9 }), {});
     deepStrictEqual(intersection({}, {}), {});
-}
+};
