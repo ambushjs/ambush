@@ -84,3 +84,17 @@ exports.occurrences = require('./functions/string/occurrences');
 exports.palindrome = require('./functions/string/palindrome');
 /** Truncate a string. */
 exports.truncate = require('./functions/string/truncate');
+
+exports.base64Decode = require('./functions/transcode/base64Decode');
+exports.base64Encode = require('./functions/transcode/base64Encode');
+
+exports.validDate = require('./functions/validation/validDate');
+exports.validEmail = require('./functions/validation/validEmail');
+exports.validIP = require('./functions/validation/validIP');
+exports.validRange = require('./functions/validation/validRange');
+exports.validTime = require('./functions/validation/validTime');
+exports.validURL = require('./functions/validation/validURL');
+exports.validUUID = require('./functions/validation/validUUID');
+
+/** Export image utilities from ambush/image */
+Object.assign(exports, require('@ambush/image'));
