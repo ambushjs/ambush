@@ -18,16 +18,16 @@ exports.median = require('./functions/math/median');
 exports.mode = require('./functions/math/mode');
 exports.pascal = require('./functions/math/pascal');
 
-exports.chunk = require('./functions/multi/chunk');
-exports.deduplicate = require('./functions/multi/deduplicate');
-exports.difference = require('./functions/multi/difference');
-exports.fileExt = require('./functions/multi/fileExt');
-exports.flatten = require('./functions/multi/flatten');
-exports.intersection = require('./functions/multi/intersection');
-exports.merge = require('./functions/multi/merge');
-exports.reverse = require('./functions/multi/reverse');
-exports.shuffle = require('./functions/multi/shuffle');
-exports.sort = require('./functions/multi/sort');
+exports.chunk = require('./functions/misc/chunk');
+exports.deduplicate = require('./functions/misc/deduplicate');
+exports.difference = require('./functions/misc/difference');
+exports.fileExt = require('./functions/misc/fileExt');
+exports.flatten = require('./functions/misc/flatten');
+exports.intersection = require('./functions/misc/intersection');
+exports.merge = require('./functions/misc/merge');
+exports.reverse = require('./functions/misc/reverse');
+exports.shuffle = require('./functions/misc/shuffle');
+exports.sort = require('./functions/misc/sort');
 
 exports.colors = require('./functions/objects/colors');
 
