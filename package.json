@@ -23,8 +23,9 @@
   "scripts": {
     "fix": "eslint . --fix",
     "lint": "eslint .",
-    "start": "node src",
-    "test": "npm start && node tests"
+    "start": "npm run node:tests",
+    "test": "npm run node:tests && node tests",
+    "node:tests": "node src"
   },
   "typings": "./src/index.d.ts",
   "devDependencies": {

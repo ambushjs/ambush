@@ -14,9 +14,5 @@ module.exports = function sort(data) {
         return sortedObject;
     }
 
-    if (typeof data === 'string') {
-        return data.split('').sort().join('');
-    }
-
     return null;
 };

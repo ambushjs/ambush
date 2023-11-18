@@ -1,4 +1,11 @@
 module.exports = function palindrome(input) {
-    const replaced = input.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    return replaced === replaced.split('').reverse().join('');
+    const cleanStr = input.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+    for (let i = 0; i < cleanStr.length / 2; i++) {
+        if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
 };

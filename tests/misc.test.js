@@ -8,7 +8,7 @@ const {
 
 const { deepStrictEqual } = require('assert/strict');
 
-module.exports = function multiTests() {
+module.exports = function miscTests() {
     deepStrictEqual(chunk([1, 2, 3, 4, 5], 3), [[1, 2, 3], [4, 5]]);
     deepStrictEqual(chunk([1, 2, 3], 5), [[1, 2, 3]]);
     deepStrictEqual(chunk([0], 1), [[0]]);
