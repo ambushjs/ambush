@@ -4,7 +4,7 @@
   "description": "A minimal library to streamline your code.",
   "license": "Apache-2.0",
   "author": "Zeptar <thezeptar@gmail.com>",
-  "homepage": "https://github.com/ambushjs/ambush#readme",
+  "homepage": "https://ambush.js.org",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ambushjs/ambush.git"
@@ -24,10 +24,14 @@
     "fix": "eslint . --fix",
     "lint": "eslint .",
     "start": "npm run node:tests",
-    "test": "npm run node:tests && node tests",
+    "test": "npm run node:tests && npm run lint && node tests",
     "node:tests": "node src"
   },
   "typings": "./src/index.d.ts",
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "standard-version": "^9.5.0"
+  },
   "keywords": [
     "javascript",
     "library",
