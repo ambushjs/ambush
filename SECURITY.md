@@ -2,10 +2,9 @@
 
 This security policy applies to the following version of the package:
 
+- v1.5.0
+- v1.4.0
 - v1.3.0
-- v1.2.1
-- v1.1.0
-- v1.0.1
 
 ## Reporting a Vulnerability
 
