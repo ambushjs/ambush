@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ambushjs/ambush/compare/v1.4.0...v1.5.0) (2023-11-18)
+
+
+### Features
+
+* **maths:** New maths functions ([d215d16](https://github.com/ambushjs/ambush/commits/d215d164ae6efbfc8cc850381922e814ab7f1c04))
+* **transcode:** Base64 encode & decode functions ([cdaa316](https://github.com/ambushjs/ambush/commits/cdaa316bfae5e1e8f59c988bf76014129b042a7c))
+* **validation:** Add validation functions ([f7393ba](https://github.com/ambushjs/ambush/commits/f7393ba58217e048a600812ac9349d3c70bc1114))
+
+
+### Bug Fixes
+
+* **intersection:** Fix using a labeled for loop ([e31c383](https://github.com/ambushjs/ambush/commits/e31c3834c9c655bc0cdeb2f9dcefe0b6768e6d4f))
+* **misc:** Update incorrect imports for misc ([972d99a](https://github.com/ambushjs/ambush/commits/972d99a0f2149bdce898fb2b5051eaa945ee29d8))
+* **security:** `guard-for-in` ([d84d9c5](https://github.com/ambushjs/ambush/commits/d84d9c5116980afdb1c8906b635a28132eed9ef7))
+
+
+### Documentation
+
+* **links:** Fix build link ([3219b04](https://github.com/ambushjs/ambush/commits/3219b048a4fe310d6a9fab2d503b426349e5b8ea))
+
+
+### Refactor
+
+* **multi-type:** Rename multi-type to misc ([08f8948](https://github.com/ambushjs/ambush/commits/08f8948d2253c3c97359098eae84f3aac601b53e))
+
+
+### Typings
+
+* Finish JSDoc with TypeScript ([abd9f13](https://github.com/ambushjs/ambush/commits/abd9f13a8041fe694a325b2eadb1c0b119c415c0))
+* Move JSDoc to typings file ([abb84a0](https://github.com/ambushjs/ambush/commits/abb84a0c8c038d8844e2189bc9e4474d6379e892))
+* Update typings for new functions ([3290d71](https://github.com/ambushjs/ambush/commits/3290d7106d1260f6471b7524bc0c2307ee6e8d96))
+
 ## [1.4.0](https://github.com/ambushjs/ambush/compare/v1.3.0...v1.4.0) (2023-11-10)
 
 

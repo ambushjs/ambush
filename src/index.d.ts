@@ -364,3 +364,77 @@ export function palindrome(input: string): boolean;
  * @param options - Additional options for the truncate length and ending.
  */
 export function truncate(input: string, { length, ending }?: Options): string;
+
+/**
+ * Decode from a base64 string.
+ * 
+ * @param data - The input string to decode.
+ * @returns The decoded string.
+ */
+export function base64Decode(data: string): string;
+
+/**
+ * Encode from a base64 string.
+ * 
+ * @param data - The input string to encode.
+ * @returns The encoded string.
+ */
+export function base64Encode(data: string): string;
+
+/**
+ * Check if a string is a valid date.
+ * 
+ * @param dateStr - The input string to check.
+ * @returns If the input is a valid date.
+ */
+export function validDate(dateStr: string): boolean;
+
+/**
+ * Check if a string is a valid email.
+ * 
+ * @param email - The input string to check.
+ * @returns If the input is a valid email.
+ */
+export function validEmail(email: string): boolean;
+
+/**
+ * Check if a string is a valid IP adress.
+ * 
+ * @param ipAdress - The input string to check.
+ * @returns If the input is a valid IP adress.
+ */
+export function validIP(ipAddress: string): boolean;
+
+/**
+ * Check if a number fits between the minimum and the maximum number.
+ * 
+ * @param value - The input number to check.
+ * @param min - The minimum number.
+ * @param max - The maximum number.
+ * @returns If the input fits between the minimum and the maximum number.
+ */
+export function validRange(value: number, min: number, max: number): boolean;
+
+/**
+ * Check if a string is a valid time.
+ * 
+ * @param time - The input string to check.
+ * @returns If the input is a valid time.
+ */
+export function validTime(time: string): boolean;
+
+/**
+ * Check if a string is a valid URL.
+ * 
+ * @param dateStr - The input string to check.
+ * @returns If the input is a valid URL.
+ */
+export function validURL(url: string): boolean;
+
+/**
+ * Check if a string is a valid UUID.
+ * 
+ * @param dateStr - The input string to check.
+ * @returns If the input is a valid UUID.
+ */
+export function validUUID(uuid: string): boolean;

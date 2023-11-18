@@ -58,5 +58,3 @@ exports.validRange = require('./functions/validation/validRange');
 exports.validTime = require('./functions/validation/validTime');
 exports.validURL = require('./functions/validation/validURL');
 exports.validUUID = require('./functions/validation/validUUID');
-
-Object.assign(exports, require('@ambush/image'));
