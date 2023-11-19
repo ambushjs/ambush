@@ -134,7 +134,7 @@ export function mode(numbers: number[]): number | number[];
 export function pascal(n: number): number[][];
 
 /**
- * Chunk an object or an array.
+ * Chunk an array or an object into small groups.
  * 
  * @param data - The input array or object to chunk.
  * @param size - The size of each chunk.
@@ -144,7 +144,7 @@ export function chunk<T>(data: T[], size: number): T[];
 export function chunk<T>(data: Obj<T>, size: number): Obj<T>[];
 
 /**
- * Remove duplicated elements in an object or an array.
+ * Remove duplicated elements in an array or an object.
  * 
  * @param data - The input string, array or object to deduplicate.
  * @returns An array or an object with the deduplicated data inside.
@@ -154,7 +154,7 @@ export function deduplicate<T>(data: T[]): T[];
 export function deduplicate<T>(data: Obj<T>): Obj<T>;
 
 /**
- * Find the symmetric difference between an object, array or a string.
+ * Find the symmetric difference between a string, an array or an object.
  * 
  * @param a - The first data to compare.
  * @param b - The second data to compare.
@@ -173,7 +173,7 @@ export function difference<T>(a: Obj<T>, b: Obj<T>): Obj<T>[];
 export function fileExt(fileName: string): string;
 
 /**
- * Unnest a nested object or an array into a single-level structure.
+ * Unnest a nested array or object into a single-level structure.
  * 
  * @param data - The input array or object to flatten.
  * @param [joiner] - Joiner when joining two object names together.
@@ -182,7 +182,7 @@ export function flatten<T>(data: T[], joiner?: string): T[];
 export function flatten<T>(data: Obj<T>, joiner?: string): Obj<T>;
 
 /**
- * Find duplicated elements in a object, string or an array.
+ * Find duplicated elements in a string, an array, or an object.
  * 
  * @param datas - The datas to compare.
  * @returns An array or an object with the duplicate elements.
@@ -192,7 +192,7 @@ export function intersection<T>(...datas: T[]): T[];
 export function intersection<T>(...datas: Obj<T>[]): Obj<T>;
 
 /**
- * Deeply merge an object, array or a string together.
+ * Deeply merge a string, an array or an object together.
  * 
  * @param target - A target to merge into.
  * @param datas - The datas to merge.
@@ -203,7 +203,7 @@ export function merge<T>(target: T[], ...datas: T[]): T[];
 export function merge<T>(target: Obj<T>, ...datas: Obj<T>[]): Obj<T>;
 
 /**
- * Reverse an array, object or a string.
+ * Reverse a string, an array, or an object.
  * 
  * @param data - A string, an array or a object to reverse.
  * @returns The reversed data.
@@ -213,7 +213,7 @@ export function reverse<T>(data: T[]): T[];
 export function reverse<T>(data: Obj<T>): Obj<T>;
 
 /**
- * Randomly shuffle an object, array or a string.
+ * Randomly shuffle a string, an array, or an object.
  * 
  * @param data - A string, an array, or an object to shuffle.
  * @returns The shuffled data.
@@ -223,7 +223,7 @@ export function shuffle<T>(data: T[]): T[];
 export function shuffle<T>(data: Obj<T>): Obj<T>;
 
 /**
- * Sort an object, array or a string alphabetically or ascendingly.
+ * Sort a string, an array or an object alphabetically or ascendingly.
  * 
  * @param data - The input array or object to sort.
  * @returns The sorted data.
