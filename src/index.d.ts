@@ -345,9 +345,10 @@ export function unescapeHtml(input: string): string;
  * 
  * @param input - The input string to count.
  * @param substring - The substring to check in the input.
+ * @param caseSensitive - Determines wether checking is case sensitive.
  * @returns How many times the substring was detected in the input.
  */
-export function occurrences(input: string, substring: string): number;
+export function occurrences(input: string, substring: string, caseSensitive: boolean): number;
 
 /**
  * Check if a string is a palindrome.
