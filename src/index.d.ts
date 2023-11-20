@@ -375,6 +375,39 @@ export function base64Decode(data: string): string;
 export function base64Encode(data: string): string;
 
 /**
+ * Convert a CSV file to a JSON file format.
+ * 
+ * @param csv - The input CSV string to convert.
+ * @returns An object with the converted JSON.
+ */
+export function csvToJson(csv: string): Obj<unknown>;
+
+/**
+ * Convert an object to a CSV file format.
+ * 
+ * @param json - The input object to covert.
+ * @returns A string with the converted CSV.
+ */
+export function jsonToCsv<T>(json: Obj<T>): string;
+
+/**
+ * Convert an object to a XML file format.
+ * 
+ * @param json - The input object to convert.
+ * @param rootName - A custom rootname for the XML.
+ * @returns A string with the converted XML.
+ */
+export function jsonToXml<T>(json: Obj<T>, rootName?: string): string;
+
+/**
+ * Convert a XML file format to an object.
+ * 
+ * @param xml - The input XML string to convert.
+ * @returns An object with the converted JSON.
+ */
+export function xmlToJson(xml: string): Obj<unknown>;
+
+/**
  * Check if a string is a valid date.
  * 
  * @param dateStr - The input string to check.
