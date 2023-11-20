@@ -1,11 +1,3 @@
-/**
- * SPDX-License-Identifier: Apache-2.0
- *
- * @copyright (c) 2023 Ambush
- * @author Zeptar <thezeptar@gmail.com>
- * @license Apache License 2.0
- */;
-
 interface DayInfo {
     day: string;
     year: number;

@@ -51,6 +51,11 @@ exports.truncate = require('./functions/string/truncate');
 exports.base64Decode = require('./functions/transcode/base64Decode');
 exports.base64Encode = require('./functions/transcode/base64Encode');
 
+exports.csvToJson = require('./functions/transformation/csvToJson');
+exports.jsonToCsv = require('./functions/transformation/jsonToCsv');
+exports.jsonToXml = require('./functions/transformation/jsonToXml');
+exports.xmlToJson = require('./functions/transformation/xmlToJson');
+
 exports.validDate = require('./functions/validation/validDate');
 exports.validEmail = require('./functions/validation/validEmail');
 exports.validIP = require('./functions/validation/validIP');
