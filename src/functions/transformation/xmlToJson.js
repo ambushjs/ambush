@@ -1,4 +1,8 @@
 module.exports = function xmlToJson(xml) {
+    if (xml.length > 1000) {
+        throw new RangeError('Input exceeds 1000 characters');
+    }
+
     const result = {};
     const regex = /<([^>]+)>/g;
 
@@ -22,4 +26,4 @@ module.exports = function xmlToJson(xml) {
     }
 
     return result;
-}
+};

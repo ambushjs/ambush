@@ -157,6 +157,17 @@ export function difference<T>(a: T[], b: T[]): T[];
 export function difference<T>(a: Obj<T>, b: Obj<T>): Obj<T>[];
 
 /**
+ * Check if a string, an array, a symbol, or an object is empty.
+ * 
+ * @param value - The data to check if empty.
+ * @returns Wether the input value is empty or not.
+ */
+export function empty(value: string): boolean;
+export function empty<T>(value?: T[]): boolean;
+export function empty(value: symbol): boolean;
+export function empty<T>(value: Obj<T>): boolean;
+
+/**
  * Extract the file extension from a string.
  * 
  * @param fileName - The input string to extract the file extension.
@@ -227,6 +238,14 @@ export function sort<T>(data: Obj<T>): Obj<T>;
  * An object with ANSI escape codes to decorate your console.
  */
 export const colors: Colors;
+
+/**
+ * Get the size from an object.
+ * 
+ * @param data - The input object to check.
+ * @returns The object size.
+ */
+export function objectSize<T>(data: Obj<T>): number;
 
 /**
  * Convert a string to aLtErNaTiNgCaSe.
