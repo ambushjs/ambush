@@ -1,10 +1,11 @@
 <div align="center">
-    <a href="https://npmjs.com/package/ambush"><img src="https://i.ibb.co/QHbxhTC/ambush-high-resolution-logo-1.png" width="500" alt="ambush" /></a>
+    <a href="https://npmjs.com/package/ambush"><img src="https://i.ibb.co/QHbxhTC/ambush-high-resolution-logo-1.png" width="512" alt="ambush" /></a>
     <p>
         <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/v/ambush" alt="NPM Version"></a>
         <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/dt/ambush" alt="NPM Downloads"></a>
         <a href="https://github.com/ambushjs/ambush/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/ambushjs/ambush/tests.yml" alt="GitHub Build"></a>
         <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://raw.githubusercontent.com/ambushjs/ambush/main/assets/license.svg" alt="GitHub License"></a>
+        <a href="https://www.bestpractices.dev/projects/8111"><img src="https://www.bestpractices.dev/projects/8111/badge" alt="Best Practices"></a>
     </p>
     <a href="https://github.com/ambushjs/ambush"><img src="https://raw.githubusercontent.com/ambushjs/ambush/main/assets/github.svg" alt="Made in GitHub"></a>
     <a href="https://github.com/ambushjs/ambush"><img src="https://raw.githubusercontent.com/ambushjs/ambush/main/assets/love.svg" alt="Made with Love"></a>
