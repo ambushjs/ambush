@@ -50,6 +50,8 @@ exports.truncate = require('./functions/string/truncate');
 
 exports.base64Decode = require('./functions/transcode/base64Decode');
 exports.base64Encode = require('./functions/transcode/base64Encode');
+exports.urlDecode = require('./functions/transcode/urlDecode');
+exports.urlEncode = require('./functions/transcode/urlEncode');
 
 exports.csvToJson = require('./functions/transformation/csvToJson');
 exports.jsonToCsv = require('./functions/transformation/jsonToCsv');
