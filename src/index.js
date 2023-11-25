@@ -19,6 +19,7 @@ exports.mode = require('./functions/math/mode');
 exports.pascal = require('./functions/math/pascal');
 
 exports.chunk = require('./functions/misc/chunk');
+exports.currentIP = require('./functions/misc/currentIP');
 exports.deduplicate = require('./functions/misc/deduplicate');
 exports.difference = require('./functions/misc/difference');
 exports.fileExt = require('./functions/misc/fileExt');
