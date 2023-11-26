@@ -45,6 +45,7 @@ exports.titleCase = require('./functions/string/cases/titleCase');
 exports.upperCase = require('./functions/string/cases/upperCase');
 exports.escapeHtml = require('./functions/string/html/escapeHtml');
 exports.unescapeHtml = require('./functions/string/html/unescapeHtml');
+exports.countWords = require('./functions/string/countWords');
 exports.occurrences = require('./functions/string/occurrences');
 exports.palindrome = require('./functions/string/palindrome');
 exports.truncate = require('./functions/string/truncate');
