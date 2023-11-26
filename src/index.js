@@ -67,3 +67,5 @@ exports.validRange = require('./functions/validation/validRange');
 exports.validTime = require('./functions/validation/validTime');
 exports.validURL = require('./functions/validation/validURL');
 exports.validUUID = require('./functions/validation/validUUID');
+
+exports.version = '2.0.0';

@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/ambushjs/ambush/compare/v1.5.0...v2.0.0) (2023-11-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove security vulnerability
+
+### Features
+
+* **misc:** Current IP address function ([aa7179f](https://github.com/ambushjs/ambush/commits/aa7179f69cb4a67157c0967c721ad06942512bea))
+* **occurences:** Case sensitive ([bfc58fc](https://github.com/ambushjs/ambush/commits/bfc58fca4e7d8ad651d6389209d70775c0632a01))
+* **string:** Utility to count words ([970e185](https://github.com/ambushjs/ambush/commits/970e1854f250eeb4d6b63de4fc5c71459d7fe71c))
+* **transcode:** URL transcode functions ([ee109b1](https://github.com/ambushjs/ambush/commits/ee109b108538ea5c725fb43e126de0517d800d7f))
+* **transformation:** Add data transformations ([66e9eae](https://github.com/ambushjs/ambush/commits/66e9eaee5f73cf445658c03b1e9f12db24214e1f))
+
+
+### Bug Fixes
+
+* Remove security vulnerability ([869bf87](https://github.com/ambushjs/ambush/commits/869bf874de9423205fc5519c4faa894880514e75))
+
+
+### Documentation
+
+* Add `best_practices` badge ([82ce2f8](https://github.com/ambushjs/ambush/commits/82ce2f89bc20f40fdee1082ae397243d35c61b1e))
+
+
+### Typings
+
+* Add typings for newly added functions ([7328047](https://github.com/ambushjs/ambush/commits/732804728d6768ce992341fa33a76a7598a2e54c))
+* **order:** Sort order to `string`, `array`, then `object` ([f34bd55](https://github.com/ambushjs/ambush/commits/f34bd557bd7e1ad632c5adb059779a63eaf2180d))
+* **transformation:** Add typings for functions ([e795df6](https://github.com/ambushjs/ambush/commits/e795df6fc3bfd24778eaf5e3a2a6b3701a065c78))
+
 ## [1.5.0](https://github.com/ambushjs/ambush/compare/v1.4.0...v1.5.0) (2023-11-18)
 
 
