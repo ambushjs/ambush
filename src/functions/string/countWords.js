@@ -1,5 +1,5 @@
-module.exports = function countWords(text) {
-    const trimmedText = text.trim();
+module.exports = function countWords(input) {
+    const trimmedText = input.trim();
     const words = trimmedText.split(/\s+/);
 
     return words.length;

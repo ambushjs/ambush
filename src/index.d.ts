@@ -136,6 +136,13 @@ export function chunk<T>(data: T[], size: number): T[];
 export function chunk<T>(data: Obj<T>, size: number): Obj<T>[];
 
 /**
+ * Get the current IP address on the current local machine.
+ * 
+ * @returns The current IP address.
+ */
+export function currentIP(): string;
+
+/**
  * Remove duplicated elements in an array or an object.
  * 
  * @param data - The input string, array or object to deduplicate.
@@ -352,6 +359,14 @@ export function escapeHtml(input: string): string;
 export function unescapeHtml(input: string): string;
 
 /**
+ * Count the words in a sentence.
+ * 
+ * @param input - The input to count.
+ * @returns The amount of the words in the sentence.
+ */
+export function countWords(input: string): number;
+
+/**
  * Count the number of occurrences of a substring in a string.
  * 
  * @param input - The input string to count.
@@ -392,6 +407,22 @@ export function base64Decode(data: string): string;
  * @returns The encoded string.
  */
 export function base64Encode(data: string): string;
+
+/**
+ * Decode from a URL-encoded format.
+ * 
+ * @param encoded - The input string to decode.
+ * @returns The decoded string.
+ */
+export function urlDecode(encoded: string): string;
+
+/**
+ * Encode to a URL-encoded format.
+ * 
+ * @param url - The input string to encode.
+ * @returns The encoded string.
+ */
+export function urlEncode(url: string): string;
 
 /**
  * Convert a CSV file to a JSON file format.
@@ -443,10 +474,10 @@ export function validDate(dateStr: string): boolean;
 export function validEmail(email: string): boolean;
 
 /**
- * Check if a string is a valid IP adress.
+ * Check if a string is a valid IP address.
  * 
- * @param ipAdress - The input string to check.
- * @returns If the input is a valid IP adress.
+ * @param ipAddress - The input string to check.
+ * @returns If the input is a valid IP address.
  */
 export function validIP(ipAddress: string): boolean;
 
