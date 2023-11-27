@@ -1,5 +1,5 @@
-module.exports = function pascalCase(input) {
-    return input
+module.exports = function pascalCase(string) {
+    return string
         .replace(/[-_]/g, ' ')
         .split(' ')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))

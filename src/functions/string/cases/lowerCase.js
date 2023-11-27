@@ -1,3 +1,3 @@
-module.exports = function lowerCase(input) {
-    return typeof input === 'string' ? input.toLowerCase() : input;
+module.exports = function lowerCase(string) {
+    return typeof string === 'string' ? string.toLowerCase() : string;
 };

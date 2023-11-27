@@ -1,3 +1,3 @@
-module.exports = function validRange(value, min, max) {
-    return value >= min && value <= max;
+module.exports = function validRange(number, min, max) {
+    return number >= min && number <= max;
 };

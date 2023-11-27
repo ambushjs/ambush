@@ -6,6 +6,8 @@
  * @license Apache License 2.0
  */;
 
+exports.TypeCodes = require('./enums/TypeCodes');
+
 exports.daysAgo = require('./functions/date/daysAgo');
 exports.leapYear = require('./functions/date/leapYear');
 
@@ -26,6 +28,7 @@ exports.fileExt = require('./functions/misc/fileExt');
 exports.flatten = require('./functions/misc/flatten');
 exports.intersection = require('./functions/misc/intersection');
 exports.merge = require('./functions/misc/merge');
+exports.random = require('./functions/misc/random');
 exports.reverse = require('./functions/misc/reverse');
 exports.shuffle = require('./functions/misc/shuffle');
 exports.sort = require('./functions/misc/sort');

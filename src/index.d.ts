@@ -45,6 +45,16 @@ interface Colors {
 type Obj<T> = Record<string | number | symbol, T>;
 
 /**
+ * Enum for the random function.
+ */
+export enum TypeCodes {
+    Number = 1,
+    String = 2,
+    Array = 3,
+    Object = 4,
+};
+
+/**
  * Find exact information of the date of the number of days ago.
  * 
  * @param days - The number of days before to check.
@@ -257,140 +267,140 @@ export function objectSize<T>(data: Obj<T>): number;
 /**
  * Convert a string to aLtErNaTiNgCaSe.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function altCase(input: string): string;
+export function altCase(string: string): string;
 
 /**
  * Convert a string to camelCase.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function camelCase(input: string): string;
+export function camelCase(string: string): string;
 
 /**
  * Convert a string to kebab-case.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function kebabCase(input: string): string;
+export function kebabCase(string: string): string;
 
 /**
  * Convert a string to lowercase.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function lowerCase(input: string): string;
+export function lowerCase(string: string): string;
 
 /**
  * Convert a string to PascalCase.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function pascalCase(input: string): string;
+export function pascalCase(string: string): string;
 
 /**
  * Convert a string to sentence case.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function sentenceCase(input: string): string;
+export function sentenceCase(string: string): string;
 
 /**
  * Convert a string to snake_case.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function snakeCase(input: string): string;
+export function snakeCase(string: string): string;
 
 /**
  * Convert a string to Start Case.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function startCase(input: string): string;
+export function startCase(string: string): string;
 
 /**
  * Switch cases in a string (lowercase to uppercase, vice versa).
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function switchCase(input: string): string;
+export function switchCase(string: string): string;
 
 /**
  * Convert a string to Title Case.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function titleCase(input: string): string;
+export function titleCase(string: string): string;
 
 /**
  * Convert a string to UPPERCASE.
  * 
- * @param input - The input string to convert.
+ * @param string - The input string to convert.
  * @returns The converted string.
  */
-export function upperCase(input: string): string;
+export function upperCase(string: string): string;
 
 /**
  * Escape special HTML characters in a string.
  * 
- * @param input - The input string to escape.
+ * @param string - The input string to escape.
  * @returns The escaped string.
  */
-export function escapeHtml(input: string): string;
+export function escapeHtml(string: string): string;
 
 /**
  * Unescape escaped HTML characters in a string.
  * 
- * @param input - The input string to unescape.
+ * @param string - The input string to unescape.
  * @returns The unescaped string.
  */
-export function unescapeHtml(input: string): string;
+export function unescapeHtml(string: string): string;
 
 /**
  * Count the words in a sentence.
  * 
- * @param input - The input to count.
+ * @param string - The input to count.
  * @returns The amount of the words in the sentence.
  */
-export function countWords(input: string): number;
+export function countWords(string: string): number;
 
 /**
  * Count the number of occurrences of a substring in a string.
  * 
- * @param input - The input string to count.
+ * @param string - The input string to count.
  * @param substring - The substring to check in the input.
  * @param caseSensitive - Determines wether checking is case sensitive.
  * @returns How many times the substring was detected in the input.
  */
-export function occurrences(input: string, substring: string, caseSensitive: boolean): number;
+export function occurrences(string: string, substring: string, caseSensitive: boolean): number;
 
 /**
  * Check if a string is a palindrome.
  * 
- * @param input - The input string to check.
+ * @param string - The input string to check.
  * @returns If the input is a palindrome.
  */
-export function palindrome(input: string): boolean;
+export function palindrome(string: string): boolean;
 
 /**
  * Truncate a string.
  * 
- * @param input - The input string to truncate.
+ * @param string - The input string to truncate.
  * @param options - Additional options for the truncate length and ending.
  */
-export function truncate(input: string, { length, ending }?: Options): string;
+export function truncate(string: string, { length, ending }?: Options): string;
 
 /**
  * Decode from a base64 string.
@@ -460,10 +470,10 @@ export function xmlToJson(xml: string): Obj<unknown>;
 /**
  * Check if a string is a valid date.
  * 
- * @param dateStr - The input string to check.
+ * @param date - The input string to check.
  * @returns If the input is a valid date.
  */
-export function validDate(dateStr: string): boolean;
+export function validDate(date: string): boolean;
 
 /**
  * Check if a string is a valid email.
@@ -476,20 +486,20 @@ export function validEmail(email: string): boolean;
 /**
  * Check if a string is a valid IP address.
  * 
- * @param ipAddress - The input string to check.
+ * @param ip - The input string to check.
  * @returns If the input is a valid IP address.
  */
-export function validIP(ipAddress: string): boolean;
+export function validIP(ip: string): boolean;
 
 /**
  * Check if a number fits between the minimum and the maximum number.
  * 
- * @param value - The input number to check.
+ * @param n - The input number to check.
  * @param min - The minimum number.
  * @param max - The maximum number.
  * @returns If the input fits between the minimum and the maximum number.
  */
-export function validRange(value: number, min: number, max: number): boolean;
+export function validRange(n: number, min: number, max: number): boolean;
 
 /**
  * Check if a string is a valid time.

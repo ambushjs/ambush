@@ -1,3 +1,3 @@
-module.exports = function validDate(dateStr) {
-    return !isNaN(new Date(dateStr).getTime());
+module.exports = function validDate(date) {
+    return !isNaN(new Date(date).getTime());
 };

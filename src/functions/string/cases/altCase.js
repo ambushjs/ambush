@@ -1,6 +1,6 @@
-module.exports = function altCase(input) {
+module.exports = function altCase(string) {
     let currentCase = true;
-    const splitted = input.split('');
+    const splitted = string.split('');
 
     return splitted.map((split) => {
         currentCase = !currentCase;

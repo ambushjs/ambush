@@ -7,6 +7,6 @@ const escapeMap = {
     '`': '&#x60;'
 };
 
-module.exports = function escapeHtml(input) {
-    return input.replace(/["&'<>`]/g, (match) => escapeMap[match] ?? match);
+module.exports = function escapeHtml(string) {
+    return string.replace(/["&'<>`]/g, (match) => escapeMap[match] ?? match);
 };

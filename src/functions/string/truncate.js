@@ -1,3 +1,3 @@
-module.exports = function truncate(input, { length = 10, ending = '...' } = {}) {
-    return input.length <= length ? input : `${input.substring(0, length).trimEnd()}${ending}`;
+module.exports = function truncate(string, { length = 10, ending = '...' } = {}) {
+    return string.length <= length ? string : `${string.substring(0, length).trimEnd()}${ending}`;
 };
