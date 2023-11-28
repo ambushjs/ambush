@@ -52,7 +52,7 @@ export enum TypeCodes {
     String = 2,
     Array = 3,
     Object = 4,
-};
+}
 
 /**
  * Find exact information of the date of the number of days ago.
@@ -512,7 +512,7 @@ export function validTime(time: string): boolean;
 /**
  * Check if a string is a valid URL.
  * 
- * @param dateStr - The input string to check.
+ * @param url - The input string to check.
  * @returns If the input is a valid URL.
  */
 export function validURL(url: string): boolean;
@@ -520,7 +520,7 @@ export function validURL(url: string): boolean;
 /**
  * Check if a string is a valid UUID.
  * 
- * @param dateStr - The input string to check.
+ * @param uuid - The input string to check.
  * @returns If the input is a valid UUID.
  */
 export function validUUID(uuid: string): boolean;
