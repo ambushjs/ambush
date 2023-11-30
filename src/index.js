@@ -8,8 +8,13 @@
 
 exports.TypeCodes = require('./enums/TypeCodes');
 
+exports.predictXOR = require('./functions/ai/predictXOR');
+
 exports.daysAgo = require('./functions/date/daysAgo');
 exports.leapYear = require('./functions/date/leapYear');
+
+exports.detectLang = require('./functions/language/detectLang');
+exports.getLang = require('./functions/language/getLang');
 
 exports.factorial = require('./functions/math/factorial');
 exports.fibonacci = require('./functions/math/fibonacci');

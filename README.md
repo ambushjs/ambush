@@ -21,7 +21,18 @@
     <a href="https://npmjs.com/package/ambush">Package</a>
 </h6>
 
-Ambush is a minimal library that streamlines and brings plenty of handy utility features to simplify your projects. Ambush is an acronym for which provides **A**dvanced **M**ulti-purpose **B**enchmark **U**tility **S**et **H**elpers for your code.
+Ambush is a minimal library that streamlines and brings plenty of handy utility features to simplify your projects. This module provides multiple types of utilities including:
+
+- AI functions
+- Date functions
+- Language functions
+- Math functions
+- Miscellaneous functions
+- Object functions
+- String functions
+- Transcode functions
+- Transformation functions
+- Validation functions
 
 In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritizes performance and is tailored to enhance your development experience while keeping things lean and efficient. Ambush also has miscellaneous functions which supports multiple data types.
 
@@ -60,17 +71,17 @@ Here's a quick example merging two arrays together.
 const arr1 = [4, 2, 1];
 const arr2 = [2, 1, 3];
 
-ab.merge(arr1, arr2);
+const outputArr = ab.merge(arr1, arr2);
 // => [4, 2, 1, 2, 1, 3]
 ```
 
 You can see that the `outputArr` array has duplicates in it. Let's try removing duplicates and sorting the array alphabetically:
 
 ```js
-ab.deduplicate(outputArr);
+const deduplicatedArr = ab.deduplicate(outputArr);
 // => [4, 2, 1, 3]
 
-ab.sort(outputArr);
+const finalOutput = ab.sort(deduplicatedArr);
 // => [1, 2, 3, 4]
 ```
 
