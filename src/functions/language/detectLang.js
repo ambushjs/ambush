@@ -5,9 +5,10 @@ module.exports = function detectLang(string) {
     const text = string.toLowerCase();
 
     for (const language in patterns) {
-        const matches = text.match(patterns[language]) || [];
-
-        languageCounts[language] = matches.length;
+        if (Object.prototype.hasOwnProperty.call(patterns, language)) {
+            const matches = text.match(patterns[language]) || [];
+            languageCounts[language] = matches.length;
+        }
     }
 
     const lang = Object.keys(languageCounts).reduce((a, b) => {

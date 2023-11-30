@@ -109,6 +109,7 @@
         "no-path-concat": "error",
         "no-process-exit": "error",
         "no-restricted-modules": "off",
+        "no-misleading-character-class": "off",
         "arrow-parens": [
             "error",
             "always"
