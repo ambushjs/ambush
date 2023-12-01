@@ -12,7 +12,6 @@ const {
     upperCase,
     escapeHtml,
     unescapeHtml,
-    occurrences,
     palindrome,
     truncate,
 } = require('../src');
@@ -36,14 +35,6 @@ module.exports = function stringTests() {
     assert.strictEqual(unescapeHtml('&quot;&amp;&#x27;&lt;&gt;&#x60;'), `"&'<>\``);
     assert.strictEqual(escapeHtml('Test'), 'Test');
     assert.strictEqual(unescapeHtml('Test'), 'Test');
-
-    assert.strictEqual(occurrences('hello world', 'o'), 2);
-    assert.strictEqual(occurrences('aaaaaa', 'aa'), 3);
-    assert.strictEqual(occurrences('', 'a'), 0);
-    assert.strictEqual(occurrences('hello world', ''), 12);
-    assert.strictEqual(occurrences('', ''), 1);
-    assert.strictEqual(occurrences('hello world', 'z'), 0);
-    assert.strictEqual(occurrences('aaaaaaa', 'aaa'), 2);
 
     assert.strictEqual(palindrome('A man a plan a canal Panama'), true);
     assert.strictEqual(palindrome('not a palindrome'), false);

@@ -29,13 +29,16 @@ exports.chunk = require('./functions/misc/chunk');
 exports.currentIP = require('./functions/misc/currentIP');
 exports.deduplicate = require('./functions/misc/deduplicate');
 exports.difference = require('./functions/misc/difference');
+exports.empty = require('./functions/misc/empty');
 exports.fileExt = require('./functions/misc/fileExt');
 exports.flatten = require('./functions/misc/flatten');
 exports.intersection = require('./functions/misc/intersection');
 exports.merge = require('./functions/misc/merge');
+exports.occurrences = require('./functions/misc/occurrences');
 exports.random = require('./functions/misc/random');
 exports.reverse = require('./functions/misc/reverse');
 exports.shuffle = require('./functions/misc/shuffle');
+exports.size = require('./functions/misc/size');
 exports.sort = require('./functions/misc/sort');
 
 exports.colors = require('./functions/objects/colors');
@@ -54,7 +57,6 @@ exports.upperCase = require('./functions/string/cases/upperCase');
 exports.escapeHtml = require('./functions/string/html/escapeHtml');
 exports.unescapeHtml = require('./functions/string/html/unescapeHtml');
 exports.countWords = require('./functions/string/countWords');
-exports.occurrences = require('./functions/string/occurrences');
 exports.palindrome = require('./functions/string/palindrome');
 exports.truncate = require('./functions/string/truncate');
 
