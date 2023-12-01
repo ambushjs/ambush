@@ -23,16 +23,16 @@
 
 Ambush is a minimal library that streamlines and brings plenty of handy utility features to simplify your projects. This module provides multiple types of utilities including:
 
-- AI functions
-- Date functions
-- Language functions
-- Math functions
-- Miscellaneous functions
-- Object functions
-- String functions
-- Transcode functions
-- Transformation functions
-- Validation functions
+- [AI functions](https://github.com/ambushjs/ambush/tree/main/src/functions/ai)
+- [Date functions](https://github.com/ambushjs/ambush/tree/main/src/functions/date)
+- [Language functions](https://github.com/ambushjs/ambush/tree/main/src/functions/lang)
+- [Math functions](https://github.com/ambushjs/ambush/tree/main/src/functions/math)
+- [Miscellaneous functions](https://github.com/ambushjs/ambush/tree/main/src/functions/misc)
+- [Object functions](https://github.com/ambushjs/ambush/tree/main/src/functions/object)
+- [String functions](https://github.com/ambushjs/ambush/tree/main/src/functions/string)
+- [Transcode functions](https://github.com/ambushjs/ambush/tree/main/src/functions/transcode)
+- [Transformation functions](https://github.com/ambushjs/ambush/tree/main/src/functions/transformation)
+- [Validation functions](https://github.com/ambushjs/ambush/tree/main/src/functions/validation)
 
 In comparison to alternatives such as Lodash and Underscore.js, Ambush prioritizes performance and is tailored to enhance your development experience while keeping things lean and efficient. Ambush also has miscellaneous functions which supports multiple data types.
 
