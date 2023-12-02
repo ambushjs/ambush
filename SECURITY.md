@@ -2,6 +2,7 @@
 
 This security policy applies to the following version of the package:
 
+- v2.0.0
 - v1.5.0
 - v1.4.0
 - v1.3.0
