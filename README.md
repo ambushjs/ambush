@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://npmjs.com/package/ambush"><img src="https://i.ibb.co/QHbxhTC/ambush-high-resolution-logo-1.png" width="512" alt="ambush" /></a>
+    <a href="https://npmjs.com/package/ambush"><img src="https://raw.githubusercontent.com/ambushjs/ambush/main/assets/ambush.png" width="512" alt="ambush" /></a>
     <p>
         <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/v/ambush" alt="NPM Version"></a>
         <a href="https://www.npmjs.com/package/ambush"><img src="https://img.shields.io/npm/dt/ambush" alt="NPM Downloads"></a>
